@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lora', serif;
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+#myNameSpelledWithTheNewSchoolFont {
+  max-width: 28vw;
+  height: auto;
+  margin-left: 6vw;
+  margin-top: 20px;
+}
+
+#headerbox {
+   margin-left: 6vw;
+   margin-right: 15vw;
+   display: flex;
+   gap: 5vw;	
+}
+
+#portfoliopic {
+  max-width: 28vw;
+  height: auto;
+}
+
+#contactdetails {
+	margin-top: 0;
+}
+
+.header-divider {
+  width: 100%;
+  border-top: 1px solid black;
+  margin: 1rem 0;
+}
+
+#portfolioTypeTheNewSchool {
+   margin-left: 6vw;
+   max-width: 18vw;
+   height: auto;
+}
+
+#datavizspelled {
+   margin-left: 6vw;
+   max-width: 18vw;
+   height: auto;
+}
+
+#notep {
+	margin-left: 6vw;
+}
+
+h2 { font-size: clamp(1.4rem, 2.2vw, 2.1rem); }
+p  { font-size: clamp(1.1rem, 1.3vw, 1.3rem); }
+#notep { font-size: clamp(0.9rem, 1vw, 1.05rem); }
+
+.headlines {
+	margin-top: 7vh;
+	margin-left: 6vw;
+	margin-right: 10vw;
+}
+
+.subheadlines {
+	margin-top: 0;
+	margin-left: 6vw;
+	margin-right: 10vw;
+}
+
+#thesis {
+   margin-left: 6vw;
+   border: 2px solid #999;
+   border-radius: 12px;
+   padding: 1.5vw;
+   max-width: 65vw;
+   transition: transform 0.2s ease; /* Subtle lift on hover */
+}
+
+#thesis img {
+  width: 100%; /* Makes image responsive to the box */
+  height: auto;
+  display: block;	
+}
+
+#finalpresentation {
+	margin-left: 6vw;
+}
+
+#finalpresentation video {
+  border: 2px solid #999;
+  border-radius: 8px;
+}
+
+#projectwrapper {
+  margin-left: 6vw;
+  margin-right: 5vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+}
+
+.projectTileType1 {
+  display: block; /* Makes the whole area clickable */
+  text-decoration: none;
+  color: black;
+  border: 2px solid #999;
+  border-radius: 12px;
+  padding: 1.5vw;
+  transition: transform 0.2s ease; /* Subtle lift on hover */
+}
+
+h3 {
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+  margin-top: 0;
+  text-align: left;
+}
+
+.projectTileType1 img {
+  width: 100%; /* Makes image responsive to the box */
+  height: auto;
+  display: block;
+}
+
+#sleepingalone {
+	margin-left: 6vw;
+	max-width: 42.5vw;
+}
+
+#sleepingalone img {
+  width: 100%; /* Makes image responsive to the box */
+  height: auto;
+  display: block;
+}
+
+#thesis:hover, 
+.projectTileType1:hover,
+.interactionprojectsClass:hover,
+.typographyprojectsClass:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#interactionprojects, #typographyprojects {
+	margin-left: 6vw;
+	margin-right: 5vw;
+	display: flex;
+	flex: 1 1 0;
+	gap: 1vw;
+}
+
+.interactionprojectsClass, .typographyprojectsClass {
+border: 2px solid #999;
+border-radius: 12px;
+padding: 1%;
+margin-bottom: 2%;
+cursor: pointer;
+}
+
+.interactionprojectsClass p {
+background-color: #BBCF4A;
+text-align: center;
+color: white;
+border-radius: 12px;
+margin-top: 0;
+}
+
+.interactionprojectsClass img, .typographyprojectsClass img {
+  width: 100%; /* Makes image responsive to the box */
+  height: auto;
+  display: block;
+}
+
+.typographyprojectsClass p {
+background-color: #E2DFA2;
+text-align: center;
+color: black;
+border-radius: 12px;
+margin-top: 0;
+}
+
+#colorvideo {
+margin-left: 6vw;
+}
+
+#colorvideo video {
+  border: 2px solid #999;
+  border-radius: 8px;
+}
+
+#footnote1 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  /* 1. Global mobile hygiene */
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  /* 2. Shared mobile content gutter */
+  .headlines,
+  .subheadlines,
+  #headerbox,
+  #thesis,
+  #finalpresentation,
+  #projectwrapper,
+  #sleepingalone,
+  #interactionprojects,
+  #typographyprojects,
+  #colorvideo,
+  #notep {
+    padding: 0 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* 3. Header */
+  #headerbox {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #myNameSpelledWithTheNewSchoolFont {
+    width: 100%;
+    max-width: none;
+    margin: 20px 20px 0 20px;
+  }
+
+  #portfoliopic {
+    width: 80%;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  #contactdetails {
+    text-align: center;
+  }
+
+  /* 4. Brand images */
+  #portfolioTypeTheNewSchool,
+  #datavizspelled {
+    width: 60%;
+    max-width: none;
+    display: block;
+    margin: 0 20px 0 20px;
+  }
+
+  /* 5. Typography scaling */
+  h2 { font-size: 28px; }
+  h3 { font-size: 20px; }
+  p  { font-size: 18px; }
+
+  #notep {
+    font-size: 14px;
+  }
+
+  /* 6. Projects grid (KEY IMPROVEMENT) */
+  #thesis {
+    max-width: none !important;
+    width: 100% !important;
+	padding: 20px;
+  }
+  
+  #projectwrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    gap: 20px;
+  }
+
+  .projectTileType1 {
+    width: 100%;
+    max-width: none;
+    padding: 16px;
+  }
+  
+   #sleepingalone {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  /* 7. Interaction + Typography projects */
+  #interactionprojects,
+  #typographyprojects {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .interactionprojectsClass,
+  .typographyprojectsClass {
+    width: 100%;
+  }
+
+  /* 8. Media */
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Prevent over-expansion of standalone videos */
+  #colorvideo video,
+  #finalpresentation video {
+    max-width: 100%;
+  }
+  
+   /* ---------- Footnote ---------- */
+
+  #footnote1 {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
+
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; /* Sits on top of everything */
+  border: none;
+  outline: none;
+  background-color: #333; /* Matches your professional tone */
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50px; /* Makes it a pill shape */
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#backToTop:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
