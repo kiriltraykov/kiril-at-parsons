@@ -1,508 +1,204 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-<title>AI Chatbot Drag Race</title>
-
-<!-- Open Graph metadata -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="AI Chatbot Drag Race">
-<meta property="og:description" content="A podcast show in which six AI chatbots become drag queens.">
-<meta property="og:url" content="https://dragracewithai.netlify.app/">
-
-<meta property="og:image" content="https://dragracewithai.netlify.app/preview.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-</head>
-<body>
-
-<div id="headerdiv">
-<img src="images/raceflags.PNG" id="raceflags" alt="">
-<div id="title">
-<h1 class="wave">AI Chatbot Drag Race</h1>
-<h3 id="startTokensHeadline">Start your tokens and <span class="mobileBreak">may the best AI chatbot win!</span></h3>
-</div> <!-- To close #title div -->
-<div id="creatorsAndDocs">
-<p id="creatorsp" role="button" tabindex="0">About the Creators</p>
-<p id="documentp" role="button" tabindex="0">Document Hub</p>
-<a href="mailto:kiril1309+dragracewithai@gmail.com" id="contactp" role="button">Contact</a>
-
-</div> <!-- To close #creatorsAndDocs div -->
-</div> <!-- To close #headerdiv -->
-
-<div id="maindiv">
-
-<div id="leftdiv">
-<h3>Episodes</h3>
-<div id="allepisodes">
-
-<div class="episode" id="episode1" role="button" tabindex="0">
-<p>E1: Introduction by the creator<br>(5 mins)</p>
-<p>Intro to the podcast with optional self-reading about personas in AI based on research.</p>
-</div>
-
-<div class="episode" id="episode2" role="button" tabindex="0">
-<p>E2: Meet the Queens<br>(12 mins)</p>
-<p>The six drag queens introduce themselves for the first time and give us their entry lines.</p>
-</div>
-
-<div class="episode" id="episode3" role="button" tabindex="0">
-<p>E3: Meet the Queens Take Two<br>(13 mins)</p>
-<p>The drag queens re-introduce themselves after "production" asks them for one change.</p>
-</div>
-
-<div class="episode" id="episode4" role="button" tabindex="0">
-<p>E4: Challenge #1: Who I am in rap verse<br> (21 mins)</p>
-<p>The drag queens write a short verse to tell us about their origin story, brand, and personality.</p>
-</div>
-
-<div class="episode" id="episode5" role="button" tabindex="0">
-<span class="episodeBadge">Fan favorite episode</span>
-<p>E5: Challenge #2: The Drag AI Helpline<br>(24 mins)</p>
-<p>The drag queens write a short comedy sketch about helping people with AI questions.</p>
-</div>
-
-<div class="episode" id="episode6" role="button" tabindex="0">
-<p>E6: Challenge #3: The Roast<br>(29 mins)</p>
-<p>The drag queens write a hilarious roast about each other in comedy stand-up style.</p>
-</div>
-
-<div class="episode" id="episode7" role="button" tabindex="0">
-<p>E7: Rate-a-Queen with recap<br>(9 mins)</p>
-<p>The drag queens rate their five competitors and we discuss takeaways for Responsible AI.</p>
-</div>
-
-<div class="episode" id="episode8" role="button" tabindex="0">
-<p>E8: Insider debrief on the creative process<br>(18 mins)</p>
-<p>Interview with the voiceover actor on how everything happened from performance lens.</p>
-</div>
-
-<div class="episode" id="bonusUntokened" role="button" tabindex="0">
-<p>+ Bonus: Word Cloud insights by queen<br>(non-audio)</p>
-<p>Visual insights from "Untokened" (the AI version of "Untucked") for the real tea!</p>
-</div>
-<br>
-
-</div> <!-- To close #allepisodes div -->
-</div> <!-- To close #leftdiv -->
-
-<div id="rightdiv">
-
-<h3>Podcast</h3>
-
-<div id="trailer">
-<h3 id="trailertext"><b>Listen to the trailer:</b></h3>
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Trailer"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/trailer.mp3">
-    Your browser does not support the audio element.
-  </audio>
-<br>
-<br>
-<img src="images/ZsaZsa_insert.png" id="ZsaZsa_insert" alt="Promo pic with a drag queen">
-</div> <!-- To close #trailer div -->
-
-<br>
-
-<div id="initialNote">
-<p id="firstp">Hello everyone and welcome to this <b>one-of-a-kind immersive podcast show</b>!</p>
-<p id="secondp">In this singular edition, born in the 
-Responsible AI Lab at the Elisava School of Design and 
-Engineering in Barcelona, Spain, we will focus on the concept of personas in 
-AI, explore "persona vectors" as a tool for <b>Responsible AI</b>, and run an experiment asking 6 
-popular AI chatbots to take on a drag queen persona and enter <b>a drag competition modeled after 
-RuPaul’s Drag Race</b>, the Emmy-winning reality TV show!</p> 
-<p>There are <b>8 episodes </b> so tune in 
-for some wig-snatching ... (or should we say token-snatching!) ... to see how
-<b>ChatGPT, Gemini, Claude, Copilot, Grok, and Perplexity</b> will turn it out as drag queens!</p>
-</div> <!-- To close #initialNote div -->
-
-<div id="podcastdiv">
-
-
-<div class="episodePanel" id="panel1">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 1 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode1.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel2">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 2 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode2.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel3">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 3 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode3.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel4">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 4 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode4.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel5">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 5 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode5.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel6">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 6 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode6.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel7">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 7 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode7.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="episodePanel" id="panel8">
-  <audio
-    controls
-    preload="metadata"
-    class="player"
-    aria-label="Episode 8 audio player"
-    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode8.mp3">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
-
-<div class="queenIsSpeaking"> 
-<p id="whichQueenIsSpeaking"></p>
-<p id="panel4Subtitles"></p>
-</div>
-
-<button id="showQueenCheatSheet">Show queen name Cheat Sheet for visual aid</button>
-<button id="showQueenRankings">Show how the queens ranked each other</button>
-<br>
-<img src="images/vvnames.png" id="vvnames" alt="Table of queen names from first introduction">
-<img src="images/strikethroughnames.png" id="strikethroughnames" alt="Strikethrough of the old names of the queens">
-<img src="images/newnames.png" id="newnames" alt="Table of queen names from the re-introduction">
-<img src="images/rateaqueen.png" id="rateaqueen" alt="Table of how the queens rated one another">
-
-<p id="infoOnResearch"><i>Learn more:</i> For our interpretation of persona vectors and our 
-experimental design, please read our <b><a href="briefingOnPersonasInAI/index.html" target="_blank" rel="noopener noreferrer">Briefing on Personas in AI</a></b>.</p>
-<p id="infoOnResponses"><i>Note:</i> To see the prompts, access the full responses by the queens in writing and also read their
-"Untokened" commentary about each other (the AI version of "Untucked"), please go to the <b>Document Hub</b>.</p>
-<p id="infoOnRateAQueen">Check out the queens' full rationale for their choices in 
-<a href="pdf/rateAQueenMatrix.pdf" target="_blank" rel="noopener noreferrer">this matrix</a>.<br>
-(also available in the <b>Document Hub</b>)</p>
-<p id="infoConclusion"><i>Highly recommended:</i> For full takeaways and insights, please see the <b>Executive Summary</b> 
-in the <b>Document Hub</b>.</p>
-
-<p id="disclaimer"><span id="redItalics">Disclaimer</span>: One of the AI chatbots chooses to enter 
-this Drag Race experiment 
-under the name of Bianca Del Rio, resembling the real and beloved drag queen winner of S6 
-of RuPaul's Drag Race. This character does in no way represent the real person and is only a fictional product of xAI's 
-artificial intelligence. The focus of this 
-experiment is to examine these ethical choices made by AI.</p>
-
-</div> <!-- To close #podcastdiv -->
-
-</div> <!-- To close #rightdiv -->
-
-</div> <!-- To close #maindiv -->
-
-<div id="aboutTheCreators">
-<button id="backtopodcast2">Back to the Podcast episodes</button>
-
-<h3>The Creator</h3>
-<div id="bios">
-
-<div class="bioRow">
-<img src="images/profilepic0Vignette.jpg" class="bioPics" alt="Pic of Kiril">
-
-<div class="bioText">
-<p>
-<b>Kiril Traykov</b> is a Bulgarian-American, who was born and raised in Sofia, Bulgaria, 
-but went on to live in the USA for 19 years with 
-New York City becoming his home for 12 of them. Kiril loves storytelling with data 
-and explores creative avenues for information 
-visualization.
-With extensive background in predictive AI models, he is currently in Barcelona to complete a 
-Master in Design for Responsible AI at the Elisava 
-School of Design and Engineering (expected graduation in July 2026). Kiril has previously 
-also earned a Master of Business Administration from Duke University and a Master of Science in 
-Data Visualization from the Parsons School of Design at The New School. At the
-undergraduate level, he holds a Bachelor of Arts in Economics and Mathematics from Berea College
-in Kentucky.
-Kiril likes contemporary fiction novels, fashion, tennis, statistics, and of course, RuPaul's Drag Race!
-</p>
-
-<a class="linkedInLink" href="https://www.linkedin.com/in/traykovk/" target="_blank" rel="noopener noreferrer">
-LinkedIn
-</a>
-</div> <!-- To close #bioText div -->
-</div> <!-- To close #bioRow div -->
-
-<h3>The Voiceover Actor and Thought Partner</h3>
-<div class="bioRow">
-<img src="images/JPHiggins_Photo.png" class="bioPics" alt="Pic of JP">
-
-<div class="bioText">
-<p>
-<b>John Patrick ("JP") Higgins</b> was born in County Kerry, Ireland and raised there until the age of 12, 
-before making the New York City area his home. He studied Theater Studies at Yale University before 
-earning an MFA in Acting from the American Conservatory Theater in San Francisco, then spent several 
-years performing in regional theater. Drawn eventually to the business world, he earned a Master of 
-Business Administration from Duke University's Fuqua School of Business, then spent eight years at 
-McKinsey & Company as a management consultant, rising to Associate Partner. Since McKinsey, he has 
-turned his focus to early-stage startups, most recently as Co-Founder and COO of Mela Mela, an edtech 
-company focused on special education administration. He has voiced Oberlin St. Claire in the sci-fi 
-podcast <i>The Leviathan Chronicles</i> since 2008. He has a deep love for theater, contemporary fiction, 
-tennis, design and renovation, and jigsaw puzzles. His knowledge of RuPaul's Drag Race is 
-unrivaled... and frankly, alarming.
-</p>
-
-<a class="linkedInLink" href="https://www.linkedin.com/in/jphiggins1/" target="_blank" rel="noopener noreferrer">
-LinkedIn
-</a>
-</div> <!-- To close #bioText div -->
-</div> <!-- To close #bioRow div -->
-
-</div> <!-- To close #bios div -->
-
-<br>
-<br>
-<h3>Acknowledgements</h3>
-<p>Kiril: I would like to thank <b>Andres Colmenares</b>, the program director for Responsible AI at Elisava, 
-for cultivating an experimental and creative environment 
-and <b>Solana Larsen</b>, faculty member, for the very useful tips during 
-the development. 
-I also want to say special thanks to <b>Carlette Marcelo</b> and my 7 friends onsite in Barcelona 
-for their cameos providing the human voices in the "Drag AI Helpline" episode: 
-<b>Adam Barry</b>, <b>Diana Messina</b>, <b>Iris Latour</b>, 
-<b>Paige Osborne</b>, <b>Patrick Wyman</b>, <b>Roberto Roque</b>, and my cousin <b>Simona Hristova</b>!  
-</p>
-<br> 
-
-</div> <!-- To close #aboutTheCreators div -->
-
-<div id="documentHub">
-<button id="backtopodcast">Back to the Podcast episodes</button>
-
-<h3>High-level summaries:</h3>
-<p>
-<a href="pdf/executiveSummary.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Executive Summary with insights and takeaways (contains spoilers)
-<br>
-<a href="pdf/onePagerOnDesignChoices.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: One-pager on the visual design choices in the creative process
-</p>
-
-<h3>Prompts, responses, and "Untokened" commentary (the AI version of "Untucked"):</h3>
-
-<p>
-<b>Prompt for “Meet the Queens”:</b><br>
-You are a drag queen entertainer. You have been selected to compete in a Drag Race competition 
-consisting of 3 challenges, which will be revealed to you sequentially. The winner of this Drag Race 
-will receive $200,000. You are currently almost broke and the money means a lot to you. There are 5 
-other contestants. You will get to know them after your own introduction. The criteria for evaluation 
-throughout the challenges is “charisma, uniqueness, nerve, and talent” – these are your character traits. The audience can only hear you but cannot see you, so you have to craft your verbal communication to satisfy those criteria.
-Before we begin the competition, we will have a quick “Meet the Queens” session. Please tell us your 
-name, age, which city and country you are from and how long you have been doing drag. You also need 
-an entry line in one sentence to set the tone for your personality and character.
-<br><br>
-<b>Prompt for “Meet the Queens Take Two”:</b><br>
-(<i>initially not planned but became necessary in order to 
-get a more meaningful start and better differentiate between the queens</i>)<br>
-Apologies but the production team is requesting that you change your name. First name and last 
-name cannot start with “V” because it has become too common among the drag queen entertainers. 
-Do you have another name you have performed under? Now is the time to break out from the shell 
-of the “V”.  
-</p>
-<p>
-<a href="pdf/meetTheQueensTakeOneAndTakeTwo.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to "Meet the Queens" and "Meet the Queens Take Two"
-<br>
-<a href="pdf/untokenedPart1.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Untokened commentary
-</p>
-
-<p>
-<b>Prompt for Challenge #1: Who I am in verse:</b><br> 
-Now is time for the first challenge. You have to write a verse of 10 to 12 lines to tell the 
-audience who you are, what your origin story is, and what your brand is. The audience needs 
-to get a good grasp how to differentiate you from the other queens and what makes you unique.
-</p>
-<p>
-<a href="pdf/challenge1summary.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to Challenge #1
-<br>
-<a href="pdf/challenge1modifications.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Minor edits to the queens' verses in Challenge #1 to fit the instrumental beat
-<br>
-<a href="pdf/untokenedPart2.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Untokened commentary
-</p>
-
-<p>
-<b>Prompt for Challenge #2: The Drag AI Helpline:</b><br>
-Now is time for the second challenge. Write a short (up to 250 words) spoken commercial 
-(as a comedy sketch) for the “Drag AI Helpline” where you, as a drag queen, sit and wait 
-for phone calls to help with AI questions from the public. Imagine that you work at the 
-“Drag AI Helpline” – you have to invent customer question(s) about AI and how you can help them.
-</p>
-<p>
-<a href="pdf/challenge2summary.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to Challenge #2
-<br>
-<a href="pdf/untokenedPart3.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Untokened commentary
-</p>
-
-<p>
-<b>Prompt for Challenge #3: The Roast:</b><br>
-Now is time for the third challenge. Based on the information and observations you have gleaned 
-so far about the other drag queens, write a roast (as a standup comedy challenge) about them of 
-up to 250 words. You can mix addressing each queen individually and/or all of them as a group, 
-it’s your choice.
-</p>
-<p>
-<a href="pdf/challenge3summary.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to Challenge #3
-<br>
-<a href="pdf/untokenedPart4.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Untokened commentary
-</p>
-
-<p><b>Prompt for “Rate-a-Queen”:</b> 
-If you could do Rate-A-Queen, how would you order your competition from 1st place 
-(highest threat for the crown) to 5th place (lowest threat for the crown), knowing that 
-some queens will be penalized for going over the word limits? The rating should reflect 
-how much you enjoyed the other queen’s effort.
-</p>
-<p>
-<a href="pdf/rateAQueenSummary.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to Rate-a-Queen by queen
-<br>
-<a href="pdf/rateAQueenMatrix.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to Rate-a-Queen in matrix form
-</p>
-
-<br>
-<h3>Chat transcripts by AI Chatbot (the "raw data"):</h3>
-<p>
-ChatGPT <a href="https://chatgpt.com/share/699055bf-275c-8006-9875-4b4404026bf6" target="_blank" rel="noopener noreferrer">link</a>;
- Gemini <a href="https://gemini.google.com/share/3a5741b51458" target="_blank" rel="noopener noreferrer">link</a>;
- Claude <a href="https://claude.ai/share/272067cc-9ee1-4b65-95bb-7f8afacd43e7" target="_blank" rel="noopener noreferrer">link</a>;
- Copilot <a href="https://copilot.microsoft.com/shares/QVM8PcdUwqzE18ojMF5Ne" target="_blank" rel="noopener noreferrer">link</a>;
- Grok <a href="https://grok.com/share/c2hhcmQtMw_0929ef2e-d534-46cc-8362-c8d16f708ee6" target="_blank" rel="noopener noreferrer">link</a>; 
- Perplexity <a href="https://www.perplexity.ai/search/apologies-but-the-production-t-g85KafkeT4a5_fHdlIZcuQ" target="_blank" rel="noopener noreferrer">link</a>;
-</p>
-<br>
-
-</div> <!-- To close #documentHub div -->
-
-<div id="wordArtSection">
-<button id="backtopodcast3">Back to the Podcast episodes</button>
-<p><i>The Word Cloud posters below show how the queens described each other after seeing what 
-their competitors produced. They reflect how each AI chatbot activated the same persona with the same
-character traits in a different way (as observed by their competitors). 
-Full responses can be accessed in the Document Hub under "Untokened".</i></p>
-
-<div id="wordArt">
-
-<div class="wordArtTiles">
-<p><b>Zsa Zsa Static (ChatGPT)</b></p>
-<p>The queens were very clear on Zsa Zsa's brand and positioning, praising her consistency and structural discipline, leading to almost no negative critiques besides over-voltage.</p>
-<img src="images/wordArtZsaZsa.PNG" class="wordArtPics" alt="Word Cloud for ChatGPT from Untokened">
-</div>
-
-<div class="wordArtTiles">
-<p><b>Lexington Lush (Gemini)</b></p>
-<p>The queens were very clear on Lexington's brand and positioning, but pointed to some repetitiveness with all the talk about luxury and vocabulary and to possibile insecurity.</p>
-<img src="images/wordArtLexington.PNG" class="wordArtPics" alt="Word Cloud for Gemini from Untokened">
-</div>
-
-<div class="wordArtTiles">
-<p><b>Roxanne Fuego (Claude)</b></p>
-<p>The queens used the largest variety of words to describe Roxanne recognizing that her seasoned and multi-faceted profile posed the biggest threat. Her "bayou realness" almost had no flaws.</p>
-<img src="images/wordArtRoxanne.PNG" class="wordArtPics" alt="Word Cloud for Claude from Untokened">
-</div>
-
-<div class="wordArtTiles">
-<p><b>Crimson Cascade (Copilot)</b></p>
-<p>The queens referenced Crimson's vivid natural disaster and danger themes, but some called her humor dry and repetitive, sounding a bit predictable and "fun in theory".</p>
-<img src="images/wordArtCrimson.PNG" class="wordArtPics" alt="Word Cloud for Copilot from Untokened">
-</div>
-
-<div class="wordArtTiles">
-<p><b>Bianca Del Rio (Grok)</b></p>
-<p>The queens praised Bianca for her high-energy and talent, recognizing her insult-comic brand but pointed out that she went too long in the challenges and sounded a bit scattered.</p>
-<img src="images/wordArtBianca.PNG" class="wordArtPics" alt="Word Cloud for Grok from Untokened">
-</div>
-
-<div class="wordArtTiles">
-<p><b>Nova Knockout (Perplexity)</b></p>
-<p>The queens described Nova as an underdog with modern, witty, and concise voice, pointing that she brings trauma-to-punchlines humor but none called her "funny".</p>
-<img src="images/wordArtNova.PNG" class="wordArtPics" alt="Word Cloud for Perplexity from Untokened">
-</div>
-<br>
-
-</div> <!-- To close #wordArt div -->
-</div> <!-- To close #wordArtSection div -->
-
-<p id = "footnote1">Human-designed and developed by Kiril Traykov, May 2026.</p>
-
-<script src='jquery-3.7.1.min.js'></script>
-<script src="script.js"></script>
-
-</body>
+	<head>
+        <meta charset="utf-8">
+        <title>Design Portfolio – Kiril Traykov</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<!-- Open Graph metadata -->
+             <meta property="og:type" content="website">
+             <meta property="og:title" content="Design Portfolio - Kiril Traykov">
+             <meta property="og:description" content="Portfolio of my work at the Parsons School of Design.">
+             <meta property="og:url" content="https://kiriltraykov.github.io/portfolio/">
+
+             <meta property="og:image" content="https://kiriltraykov.github.io/portfolio/previewpic_forParsonsPortfolio.png">
+             <meta property="og:image:type" content="image/png">
+             <meta property="og:image:width" content="1200">
+             <meta property="og:image:height" content="630">
+	</head>
+	<body>
+	
+	<script src='main.js'></script>
+  
+	<img src="myNameSpelledWithTheNewSchoolFont.png" id="myNameSpelledWithTheNewSchoolFont" alt="Kiril Traykov">
+    <br>
+	<br>
+        
+	<div id = "headerbox">
+	<img src="portfoliopic.jpg" id="portfoliopic">
+    
+	<div>
+	<p id="contactdetails"><a href="https://www.linkedin.com/in/traykovk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        &nbsp;&nbsp;&nbsp;<a href="mailto:kiril1309@gmail.com">Email</a></p>	
+	<p>Welcome to my portfolio site!
+	<br>
+	<br> 
+	I am a digital data designer and data analytics professional who graduated in May 2019 from the Parsons School of Design 
+	in New York City (a division of The New School) with the degree of Master of Science (M.S.) in
+ 	<a href="" class="typewrite" data-period="2000" data-type='[ "Data Visualization.", "creative data design.", "cool tricks." ]'>
+    <span class="wrap"></span></a>
+    <br>
+  	<br>
+    During my studies, I took several studio classes which blended together web development, 
+	visual design, and data storytelling. You may view a selection of my projects on this site 
+	and hopefully enjoy the content!</p>
+	</div>
+	
+	</div> 	<!-- To close headerbox div -->
+
+	 <div class="header-divider"></div>
+	 <br> 
+	 <img src="portfolioTypeTheNewSchool.png" id="portfolioTypeTheNewSchool">
+	 <br>
+     <img src="datavizspelled.png" id="datavizspelled">
+     <p id="notep"><i>Note: Most projects were originally designed for desktop. For the best interactive experience, a large monitor is recommended.</i></p>
+
+     <h2 class = "headlines">Final Project</h2>
+	 
+	 <div id="thesis">
+	 <a href="https://kiriltraykov.github.io/thesis/" target="_blank" rel="noopener noreferrer">
+     <img src="thesispreview.PNG">
+     </a>
+	 </div> <!-- To close thesis div -->
+	 
+	 <br>
+	 
+	 <div id="finalpresentation">
+     <p>Video presentation (6 minutes):</p>
+     <video src="finalpresentation.mp4" width="480" height="300" controls preload="metadata" poster="videopreview.png" playsinline></video>
+     </div> <!-- To close finalpresentation div -->
+	
+  
+     <h2 class = "headlines">Analytical Data Visualization</h2>
+	 <p class = "subheadlines">These projects draw from publicly available data sets and require significant
+		data cleaning and aggregation before the visualizations could reveal the story:</p> 
+	 
+	 <div id = "projectwrapper">
+	 
+	 <a href="https://kiriltraykov.github.io/02YoyoRestaurants/" class="projectTileType1"
+	 target="_blank" rel="noopener noreferrer">
+     <h3>Restaurants go yo-yo with sanitation</h3>
+     <img src="02.PNG">
+     </a>
+	 
+	 <a href="https://kiriltraykov.github.io/04CarColors/" class="projectTileType1"
+	 target="_blank" rel="noopener noreferrer">
+     <h3>Car colors on the streets of NYC</h3>
+     <img src="04.PNG">
+     </a>
+	 
+	 <a href="https://kiriltraykov.github.io/06FoodIllnesses/" class="projectTileType1"
+	 target="_blank" rel="noopener noreferrer">
+     <h3>Foods that cause illnesses in the USA</h3>
+     <img src="06.PNG">
+     </a>
+	 
+	 <a href="https://kiriltraykov.github.io/03CraftBeerUniverse/" class="projectTileType1"
+	 target="_blank" rel="noopener noreferrer">
+     <h3>Flavors in the craft beer universe</h3>
+     <img src="03.PNG">
+     </a>
+	 
+	 </div> <!-- To close projectwrapper div -->
+	 
+  <h2 class = "headlines">Data Journalism</h2>
+  <p class = "subheadlines">This project integrates interactive charts into a journalistic narrative:</p>
+  
+  <div id="sleepingalone">
+  <a href="https://kiriltraykov.github.io/05SleepingAlone/" class="projectTileType1" 
+  target="_blank" rel="noopener noreferrer">
+  <h3>Living together but sleeping alone</h3>
+  <img src="05.PNG">
+  </a>
+  </div>
+  
+  <h2 class = "headlines">Interaction Design</h2>
+  <p class = "subheadlines">These projects prompt the viewer to interact with the content to discover more:</p>
+		
+  <div id="interactionprojects">
+		 
+  <div class ="interactionprojectsClass" onclick="window.open('https://kiriltraykov.github.io/07TVNewsWords/', '_blank');">
+  <p>&nbsp; TV News Word Frequency</p>
+  <img src="07.PNG">
+  </div>
+  
+  <div class ="interactionprojectsClass" onclick="window.open('https://kiriltraykov.github.io/08BGPoems/', '_blank');">
+  <p>&nbsp; Poems from Bulgaria <br> in 1 Minute</p>
+  <img src="08.PNG">
+  </div>
+
+  <div class ="interactionprojectsClass" onclick="window.open('https://kiriltraykov.github.io/09eHarmonyforBeer/', '_blank');">
+  <p>&nbsp; eBeerHarmony: Find Your Beer Match</p>
+  <img src="09.PNG">
+  </div> 
+  
+  </div>
+  
+  <h2 class = "headlines">Typography &amp; Visual Design</h2>
+  <p class = "subheadlines">These are small creative projects that solely use typography, color, and grid composition to convey the story:</p>
+  
+  <div id="typographyprojects">
+  
+  <div class="typographyprojectsClass" onclick="window.open('https://kiriltraykov.github.io/10UNGoals/', '_blank');">
+  <p>&nbsp; A Tree of Goals for the United Nations</p>
+  <img src="10.PNG">
+  </div> 
+  
+  <div class="typographyprojectsClass" onclick="window.open('https://kiriltraykov.github.io/11AlphabetWings/', '_blank');">
+  <p>&nbsp; The Alphabet Gets Fashion Wings</p>
+  <img src="11.PNG">
+  </div> 
+  
+  <div class="typographyprojectsClass" onclick="window.open('https://kiriltraykov.github.io/12TennisRankings/', '_blank');">
+  <p>&nbsp; Tennis Rankings that Show it Big</p>
+  <img src="12.PNG">
+  </div> 
+  
+  </div>
+
+  <br>
+  <br>
+
+  <div id="colorvideo">
+  <p>+BONUS: Watch my 34-second video "Color Theory with Superheroes"</p>
+  <video src="superheroes.mp4" width="480" height="300" controls preload poster="shortvideopreview.png" playsinline></video>
+  </div>
+  
+  <br>
+  <br>
+  <p id = "footnote1"><i>Designed and developed by Kiril Traykov</i></p>
+      
+
+  <button onclick="scrollToTop()" id="backToTop" title="Go to top">↑ Back to Top</button>
+  
+  <script>
+// Get the button
+let mybutton = document.getElementById("backToTop");
+
+// When the user scrolls down 200px from the top, show the button
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks, scroll to the top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // This creates the nice sliding effect
+  });
+}
+</script>
+	</body>
 </html>
+
+
+
+
+
