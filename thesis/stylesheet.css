@@ -309,7 +309,7 @@ a { color: white; }
   width: 96%;
   background: #423C40;
   color: white;
-	font-size: 0.85vw;
+  font-size: 0.85vw;
 
 }
 
@@ -412,7 +412,7 @@ a { color: white; }
 }
 
 #footnote1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 100%;
     left: 0;
     padding: 8px;
