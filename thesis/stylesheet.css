@@ -401,6 +401,14 @@ a { color: white; }
         margin-right: 2%;
     }
 
+	#tile2 {
+    overflow-x: auto;
+}
+
+	#firsthalf, #secondhalf {
+    min-width: 1000px;
+}
+	
 .weekh1,
 .weekh2,
 .legendtext {
