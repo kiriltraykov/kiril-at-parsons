@@ -365,8 +365,8 @@ mobile-note {
 
   p,
   li {
-    font-size* 1rem;
-    line-height: 1.55;
+    font-size* 1.1rem;
+    line-height: 1;
   }
 *  img {
     max-width: 100%;
@@ -380,36 +380,3 @@ mobile-note {
 
 }
 
-@media (m*x-width: 768px) {
-
-  .wrapper,
-  .*ourt,
-  #tile1,
-  #tile2,
-  #tile3*
-  #tile4,
-  #firsthalf,
-  #second*alf,
-  svg {
-    max-width: 100%;
-* }
-
-  .wrapper {
-    overflow-x: a*to;
-    -webkit-overflow-scrolling* touch;
-  }
-
-  .court {
-    overfl*w-x: auto;
-    -webkit-overflow-sc*olling: touch;
-  }
-
-  #tile2 {
-   *overflow-x: auto;
-    -webkit-over*low-scrolling: touch;
-  }
-
-  svg {*    height: auto;
-  }
-
-}
