@@ -377,6 +377,14 @@ a { color: white; }
     max-width: 100%;
     height: auto;
   }
+	
+#tile1 img {
+    width: 100%;
+}
+	
+#headlineForChart {
+    text-align: center;
+}
 
   button {
     font-size: 1.1rem;
@@ -401,6 +409,13 @@ a { color: white; }
 
 .allt {
     font-size: 0.9rem;
+}
+
+#footnote1 {
+    font-size: 1rem;
+    width: 100%;
+    left: 0;
+    padding: 8px;
 }
 
 }
