@@ -4,6 +4,9 @@ body {
     margin-left: 2%;
     margin-right: 2%;
 }
+.mobile-note {
+  display: none;
+}
 
 h1 {
   font-family: 'Lato', sans-serif;
@@ -317,6 +320,17 @@ a { color: white; }
 ================================ */
 
 @media (max-width: 768px) {
+
+mobile-note {
+    display: block;
+    max-width: 640px;
+    margin: 12px auto 24px auto;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    background: #f5f5f5;
+    border-left: 4px solid #222;
+  }
 
   *tml {
     box-sizing: border-box;
