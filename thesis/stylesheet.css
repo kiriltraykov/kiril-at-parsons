@@ -313,15 +313,9 @@ a { color: white; }
 
 }
 
-/* ================================
-   Mobile readability improvements
-   Thesis project: Travel in Women's Professional Tennis
-   Added for small screens
-================================ */
-
 @media (max-width: 768px) {
-
-mobile-note {
+	
+.mobile-note {
     display: block;
     max-width: 640px;
     margin: 12px auto 24px auto;
@@ -332,50 +326,53 @@ mobile-note {
     border-left: 4px solid #222;
   }
 
-  *tml {
+  html {
     box-sizing: border-box;
-* }
-
-  *, *::before, *::after {
-   *box-sizing: inherit;
   }
 
-  body {*    margin: 0;
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
     padding: 16px;
-*   font-size: 16px;
-    line-heigh*: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
     overflow-x: hidden;
-  }*
+  }
+
   h1 {
     font-size: 2rem;
-    l*ne-height: 1.15;
-    text-align: c*nter;
+    line-height: 1.15;
+    text-align: center;
     margin: 24px auto;
   }
 
-* h2 {
+  h2 {
     font-size: 1.5rem;
-    l*ne-height: 1.25;
+    line-height: 1.25;
   }
 
   h3 {
-    f*nt-size: 1.2rem;
-    line-height: *.3;
+    font-size: 1.3rem;
+    line-height: 1.25;
   }
 
   p,
   li {
-    font-size* 1.1rem;
+    font-size: 1.1rem;
     line-height: 1;
   }
-*  img {
+
+  img {
     max-width: 100%;
-    h*ight: auto;
+    height: auto;
   }
 
   button {
-    fo*t-size: 1rem;
-    padding: 10px 14*x;
+    font-size: 1.1rem;
+    padding: 10px 14px;
   }
 
 }
