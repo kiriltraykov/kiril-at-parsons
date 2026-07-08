@@ -420,6 +420,10 @@ a { color: white; }
     font-size: 0.9rem;
 }
 
+.recttext {
+    font-size: 1rem;
+}
+
 #footnote1 {
     font-size: 0.8rem;
     width: 100%;
