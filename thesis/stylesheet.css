@@ -401,8 +401,9 @@ a { color: white; }
         margin-right: 2%;
     }
 
-	#tile2 {
+#tile2 {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 	#firsthalf, #secondhalf {
