@@ -383,9 +383,9 @@ a { color: white; }
     padding: 10px 14px;
   }
 	
-context {
-        margin-left: 5%;
-        margin-right: 5%;
+#context {
+        margin-left: 0;
+        margin-right: 0;
     }
 	
 .wrapper {
