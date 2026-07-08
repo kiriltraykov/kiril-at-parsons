@@ -417,6 +417,10 @@ a { color: white; }
     left: 0;
     padding: 8px;
 }
+	
+#footnote1 a {
+    font-size: 0.8rem;
+}
 
 }
 
