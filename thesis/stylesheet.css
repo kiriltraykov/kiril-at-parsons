@@ -459,10 +459,14 @@ a { color: white; }
     text-align: center;
 }
 	
-	#chartInTile3 {
+#chartInTile3 {
+    width: 100%;
+    min-height: 500px;
     overflow-x: auto;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
-    min-height: 450px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .tourn1,
