@@ -475,6 +475,16 @@ a { color: white; }
     display: block;
     overflow: visible;
 }
+	
+#chartInTile3 {
+    border: 3px solid black;
+    background: rgba(255,255,255,0.25);
+}
+
+#chartInTile3 svg {
+    border: 3px dashed purple;
+    background: rgba(255,255,255,0.35);
+}
 
 #player0 {
     font-size: 1rem;
