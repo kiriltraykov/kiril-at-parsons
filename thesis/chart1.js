@@ -748,7 +748,7 @@ function drawchartInTile3(selectplayer) {
 // On mobile, keep it wide and let the container scroll horizontally.
 var isMobile = window.innerWidth <= 768;
 
-var svgWidth1 = isMobile ? 700 : $('#chartInTile3').width();
+var svgWidth1 = isMobile ? 1000 : $('#chartInTile3').width();
 var svgHeight1 = 450;
 
 var width1 = svgWidth1 - margin1.left1 - margin1.right1;
