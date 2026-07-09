@@ -210,6 +210,10 @@ background: #00868B;
   color: white;
 }
 
+.playerInfo {
+  pointer-events: none;
+}
+
 .playerList {
   font-size: 0.9vw;
 }
@@ -254,7 +258,6 @@ height: 450px;
 .tourn1, .tourn2, .tourn3, .tourn4 {
   font-size: 0.75vw;
 }
-
 
 #tableInTile3 {
   float: right;
@@ -505,7 +508,6 @@ a { color: white; }
     grid-template-columns: 85px minmax(0, 1fr) 80px;
     align-items: center;
     column-gap: 6px;
-	line-height: 1.4;
 }
 
 #tableInTile3 p {
