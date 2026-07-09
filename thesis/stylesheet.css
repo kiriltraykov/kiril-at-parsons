@@ -342,6 +342,11 @@ a { color: white; }
     overflow-x: hidden;
   }
 	
+.court {
+    width: 100%;
+    height: 220px;
+  }
+	
   #courtbutton {
         float: none;
         display: block;
