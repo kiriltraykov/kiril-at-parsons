@@ -490,6 +490,17 @@ a { color: white; }
     background: red !important;
     min-height: 300px !important;
 }
+	
+	#chartInTile3 {
+    background: red !important;
+    border: 10px solid blue !important;
+    min-height: 300px !important;
+}
+
+#chartInTile3 svg {
+    border: 10px dashed yellow !important;
+    background: lime !important;
+}
 
 #player0 {
     font-size: 1rem;
