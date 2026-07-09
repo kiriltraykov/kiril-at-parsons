@@ -740,6 +740,8 @@ var data2 = [
 
 function drawchartInTile3(selectplayer) {
 
+ d3.select("#chartInTile3").selectAll("svg").remove();
+
  var margin1 = {top1: 20, right1: 18, bottom1: 20, left1: 2};
 
 // Give the chart a stable drawing size.
