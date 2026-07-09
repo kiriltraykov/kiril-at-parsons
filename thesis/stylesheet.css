@@ -470,7 +470,7 @@ a { color: white; }
 }
 
 #chartInTile3 svg {
-    width: 900px !important;
+    width: 800px !important;
     height: 600px !important;
     max-width: none;
     display: block;
