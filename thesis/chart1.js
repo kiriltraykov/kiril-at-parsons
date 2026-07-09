@@ -1090,7 +1090,7 @@ var svg1 = d3.select("#chartInTile3").append("svg")
       .attr("y", -10)
       .attr("fill", "black")
       .style("text-anchor", "end")
-      .style("font-size", "1.2vw")
+      .style("font-size", isMobile ? "0.8rem" : "1.2vw")
       .text("Kilometers traveled, cumulative");
 
       var yAxisPosition = isMobile ? 0 : width1;
