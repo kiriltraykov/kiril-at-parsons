@@ -428,6 +428,13 @@ a { color: white; }
 .recttext {
     font-size: 1rem;
 }
+	
+#tile3 {
+    display: block;
+    width: 100%;
+    clear: both;
+    overflow: visible;
+}
 
 #playerListHolder,
 #tableInTile3 {
@@ -447,20 +454,26 @@ a { color: white; }
 }
 
 #chartInTile3 {
+    clear: both;
+    position: relative;
     width: 100%;
     height: 650px;
     min-height: 650px;
     overflow-x: auto;
-    overflow-y: auto;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     display: block;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
 
 #chartInTile3 svg {
+    width: 900px !important;
+    height: 600px !important;
     max-width: none;
     display: block;
+    overflow: visible;
 }
 
 #player0 {
