@@ -441,6 +441,7 @@ a { color: white; }
 .playerList {
     font-size: 0.8rem;
     line-height: 1.4;
+	text-align: center;
 }
 
 .playerList:hover {
@@ -454,7 +455,7 @@ a { color: white; }
 }
 
 #player0x {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 
