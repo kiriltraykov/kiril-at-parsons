@@ -740,15 +740,23 @@ var data2 = [
 
 function drawchartInTile3(selectplayer) {
 
-      var margin1 = {top1: 20, right1: 18, bottom1: 20, left1: 2},
-      width1 = $('#chartInTile3').width() - margin1.left1 - margin1.right1,
-      height1 = 450 - margin1.top1 - margin1.bottom1;
+ var margin1 = {top1: 20, right1: 18, bottom1: 20, left1: 2};
 
-      var svg1 = d3.select("#chartInTile3").append("svg")
-      .attr("width", '100%')
-      .attr("height", '100%')
-      .append("g")
-      .attr("transform", "translate(" + margin1.left1 + "," + margin1.top1 + ")");
+// Give the chart a stable drawing size.
+// On mobile, keep it wide and let the container scroll horizontally.
+var isMobile = window.innerWidth <= 768;
+
+var svgWidth1 = isMobile ? 700 : $('#chartInTile3').width();
+var svgHeight1 = 450;
+
+var width1 = svgWidth1 - margin1.left1 - margin1.right1;
+var height1 = svgHeight1 - margin1.top1 - margin1.bottom1;
+
+var svg1 = d3.select("#chartInTile3").append("svg")
+.attr("width", svgWidth1)
+.attr("height", svgHeight1)
+.append("g")
+.attr("transform", "translate(" + margin1.left1 + "," + margin1.top1 + ")");
   
       var x1 = d3.scaleLinear()
       .domain([0, 120000])
