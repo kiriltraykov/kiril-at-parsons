@@ -502,9 +502,10 @@ a { color: white; }
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 80px minmax(0, 1fr) 80px;
+    grid-template-columns: 85px minmax(0, 1fr) 80px;
     align-items: center;
     column-gap: 6px;
+	line-height: 1.4;
 }
 
 #tableInTile3 p {
