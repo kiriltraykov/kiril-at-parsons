@@ -1,12 +1,8 @@
 body {
-    background-color: #ff8b94;
+    background-color: lime /* #ff8b94; */
     font-family: 'Sanchez', serif;
     margin-left: 2%;
     margin-right: 2%;
-}
-
-body {
-    background: lime !important;
 }
 
 .mobile-note {
