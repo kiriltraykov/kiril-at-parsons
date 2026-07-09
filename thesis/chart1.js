@@ -745,9 +745,9 @@ function drawchartInTile3(selectplayer) {
 
   var isMobile = window.innerWidth <= 768;
 
-  var margin1 = isMobile
-    ? {top1: 70, right1: 30, bottom1: 50, left1: 55}
-    : {top1: 20, right1: 18, bottom1: 20, left1: 2};
+var margin1 = isMobile
+  ? {top1: 40, right1: 30, bottom1: 60, left1: 55}
+  : {top1: 20, right1: 18, bottom1: 20, left1: 2};
 
   var svgWidth1 = isMobile ? 900 : $('#chartInTile3').width();
   var svgHeight1 = isMobile ? 600 : 450;
