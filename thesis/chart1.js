@@ -949,6 +949,9 @@ var svg1 = d3.select("#chartInTile3").append("svg")
           
           if (selectplayer == ""){
            
+         svg1.selectAll(".playerInfo").remove();
+         $('.playerList').removeAttr('style');
+           
           var hoveredPlayer = data2.filter(function(item) {
            if(item.Player == tournaments.slice(-1)[0].Player) {
              return true;
@@ -1071,12 +1074,14 @@ var svg1 = d3.select("#chartInTile3").append("svg")
         
         })
         
-        .on("mouseout", function(d) {
-         d3.select(this).attr("stroke", "#8BFFB0").attr("stroke-width", 2.0);
-         svg1.select(".playerInfo").remove();
-         $('.playerList').removeAttr('style');
-         });
-         
+      .on("mouseout", function(d) {
+            d3.select(this)
+            .attr("stroke", "#8BFFB0")
+            .attr("stroke-width", 2.0);
+
+            svg1.selectAll(".playerInfo").remove();
+            $('.playerList').removeAttr('style');
+       });     
             
       }
 
