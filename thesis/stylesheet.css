@@ -455,6 +455,7 @@ a { color: white; }
     -webkit-overflow-scrolling: touch;
     display: block;
     margin-bottom: 20px;
+	padding-bottom: 10px
 }
 
 #chartInTile3 svg {
