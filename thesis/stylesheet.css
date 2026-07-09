@@ -446,17 +446,22 @@ a { color: white; }
     line-height: 1.4;
     text-align: center;
 }
-	
+
 #player0 {
     font-size: 1rem;
     width: 100%;
+    max-width: 100%;
     text-align: center;
     padding: 8px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.4;
 }
 
 #player0x {
     font-size: 0.8rem;
     text-align: center;
+	line-height: 1.4;
 }
 	
 #chartInTile3 {
