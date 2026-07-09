@@ -446,6 +446,17 @@ a { color: white; }
 .playerList:hover {
     font-size: 0.8rem;
 }
+#player0 {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+#player0x {
+    font-size: 1rem;
+    text-align: center;
+}
 
 #footnote1 {
     font-size: 0.8rem;
