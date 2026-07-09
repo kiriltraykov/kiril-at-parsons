@@ -458,6 +458,12 @@ a { color: white; }
     font-size: 0.8rem;
     text-align: center;
 }
+	
+	#chartInTile3 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    min-height: 450px;
+}
 
 #footnote1 {
     font-size: 0.8rem;
