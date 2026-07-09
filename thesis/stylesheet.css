@@ -439,12 +439,12 @@ a { color: white; }
 }
 
 .playerList {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.4;
 }
 
 .playerList:hover {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #footnote1 {
