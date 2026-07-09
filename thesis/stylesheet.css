@@ -458,9 +458,7 @@ a { color: white; }
 }
 
 #chartInTile3 svg {
-    min-width: 700px;
     max-width: none;
-    height: 450px !important;
     display: block;
 }
 
