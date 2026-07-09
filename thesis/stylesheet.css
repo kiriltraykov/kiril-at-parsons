@@ -1,5 +1,5 @@
 body {
-    background-color: lime; /* #ff8b94; */
+    background-color: #ff8b94;
     font-family: 'Sanchez', serif;
     margin-left: 2%;
     margin-right: 2%;
@@ -315,10 +315,6 @@ a { color: white; }
 }
 
 @media (max-width: 768px) {
-
-	body {
-    background: lime !important;
-}
 	
 .mobile-note {
     display: block;
