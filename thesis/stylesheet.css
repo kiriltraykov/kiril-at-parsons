@@ -507,6 +507,34 @@ a { color: white; }
 	box-sizing: border-box;
 }	
 
+#tableInTile3 {
+    float: none;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr) 85px;
+    align-items: center;
+    column-gap: 6px;
+}
+
+#tableInTile3 p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tableheader {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.zz {
+    overflow-wrap: anywhere;
+}
+
 .tourn1,
 .tourn2,
 .tourn3,
