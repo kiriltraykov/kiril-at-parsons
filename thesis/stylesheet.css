@@ -449,7 +449,7 @@ a { color: white; }
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 0.8fr 2fr 0.6fr;
+    grid-template-columns: 70px 1fr 80px;
     align-items: center;
     column-gap: 8px;
 }
