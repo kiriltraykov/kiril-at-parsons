@@ -540,7 +540,8 @@ a { color: white; }
 }
 
 #conclusiondiv {
-    float: none;
+    margin-left: 2.5%;
+	float: none;
     width: 100%;
     max-width: 100%;
 }
