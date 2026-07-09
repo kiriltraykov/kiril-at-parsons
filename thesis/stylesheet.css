@@ -430,7 +430,6 @@ a { color: white; }
 }
 
 #playerListHolder,
-#chartInTile3,
 #tableInTile3 {
     float: none;
     width: 100%;
