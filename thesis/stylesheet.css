@@ -314,6 +314,10 @@ a { color: white; }
 }
 
 @media (max-width: 768px) {
+
+	body {
+    background: lime !important;
+}
 	
 .mobile-note {
     display: block;
@@ -474,32 +478,6 @@ a { color: white; }
     max-width: none;
     display: block;
     overflow: visible;
-}
-	
-	#chartInTile3 {
-    border: 3px solid black;
-    background: rgba(255,255,255,0.25);
-}
-
-#chartInTile3 svg {
-    border: 3px dashed purple;
-    background: rgba(255,255,255,0.35);
-}
-
-	#chartInTile3 {
-    background: red !important;
-    min-height: 300px !important;
-}
-	
-	#chartInTile3 {
-    background: red !important;
-    border: 10px solid blue !important;
-    min-height: 300px !important;
-}
-
-#chartInTile3 svg {
-    border: 10px dashed yellow !important;
-    background: lime !important;
 }
 
 #player0 {
