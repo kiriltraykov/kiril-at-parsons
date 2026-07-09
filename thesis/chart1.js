@@ -819,11 +819,11 @@ var svg1 = d3.select("#chartInTile3").append("svg")
         .attr("fill", "#8E388E")
         .attr("font-weight", "bold")
         .html(function(d) {  
-                            return "<tspan x='25' dy='1.2em'>" + 
+                            return "<tspan x='20' dy='1.2em'>" + 
                             data2[i].tournaments.slice(-1)[0].Player + " traveled " + formatComma(data2[i].tournaments.slice(-1)[0].cumDistance) + 
                             " km to play in " + data2[i].tournaments.length + " tournaments." +
                             "</tspan>" + 
-                            "<tspan x='25' dy='1.2em'>" +
+                            "<tspan x='20' dy='1.2em'>" +
                             "Her travel efficiency was " + formatWholeNumber((data2[i].tournaments.slice(-1)[0].cumDistance)/(data2[i].tournaments.slice(-1)[0].cumPoints)) + " km for 1 ranking point." +
                             "</tspan>"});
         
