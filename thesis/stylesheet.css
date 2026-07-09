@@ -446,16 +446,16 @@ a { color: white; }
     text-align: center;
 }
 
-	#chartInTile3 {
+#chartInTile3 {
     width: 100%;
-    height: 500px;
-    min-height: 500px;
+    height: 650px;
+    min-height: 650px;
     overflow-x: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     display: block;
     margin-bottom: 20px;
-	padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 #chartInTile3 svg {
