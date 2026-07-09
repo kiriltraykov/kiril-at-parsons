@@ -468,6 +468,13 @@ a { color: white; }
     display: block;
     margin-bottom: 20px;
 }
+	
+#chartInTile3 svg {
+    min-width: 700px;
+    max-width: none;
+    height: auto;
+    display: block;
+}
 
 .tourn1,
 .tourn2,
