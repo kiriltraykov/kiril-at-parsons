@@ -437,12 +437,21 @@ a { color: white; }
     overflow: visible;
 }
 
-#playerListHolder,
-#tableInTile3 {
+#playerListHolder {
     float: none;
     width: 100%;
     height: auto;
     display: block;
+}
+
+#tableInTile3 {
+    float: none;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 0.6fr;
+    align-items: center;
+    column-gap: 8px;
 }
 
 .playerList,
@@ -505,7 +514,7 @@ a { color: white; }
 .weekh3,
 .zz,
 .yy {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.3;
 }
 
