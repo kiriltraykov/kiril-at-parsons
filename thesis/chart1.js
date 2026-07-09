@@ -740,19 +740,20 @@ var data2 = [
 
 function drawchartInTile3(selectplayer) {
 
- d3.select("#chartInTile3").selectAll("svg").remove();
+ 
+  d3.select("#chartInTile3").selectAll("svg").remove();
 
- var margin1 = {top1: 20, right1: 18, bottom1: 20, left1: 2};
+  var isMobile = window.innerWidth <= 768;
 
-// Give the chart a stable drawing size.
-// On mobile, keep it wide and let the container scroll horizontally.
-var isMobile = window.innerWidth <= 768;
+  var margin1 = isMobile
+    ? {top1: 70, right1: 30, bottom1: 50, left1: 55}
+    : {top1: 20, right1: 18, bottom1: 20, left1: 2};
 
-var svgWidth1 = isMobile ? 1000 : $('#chartInTile3').width();
-var svgHeight1 = 450;
+  var svgWidth1 = isMobile ? 900 : $('#chartInTile3').width();
+  var svgHeight1 = isMobile ? 600 : 450;
 
-var width1 = svgWidth1 - margin1.left1 - margin1.right1;
-var height1 = svgHeight1 - margin1.top1 - margin1.bottom1;
+  var width1 = svgWidth1 - margin1.left1 - margin1.right1;
+  var height1 = svgHeight1 - margin1.top1 - margin1.bottom1;
 
 var svg1 = d3.select("#chartInTile3").append("svg")
 .attr("width", svgWidth1)
@@ -1092,19 +1093,21 @@ var svg1 = d3.select("#chartInTile3").append("svg")
       .style("font-size", "1.2vw")
       .text("Kilometers traveled, cumulative");
 
-      svg1.append("g")
-      .attr("class", "y axis")
-      .attr("transform", "translate(" + width1 + ",0)")
-      .call(yAxis)
-      .append("text")
-      .attr("class", "label")
-      .attr("x", height1-145)
-      .attr("y", 60)
-      .attr("fill", "black")
-      .attr("transform", "rotate(90)" )
-      .style("text-anchor", "end")
-      .style("font-size", "1.2vw")
-      .text("Ranking Points, cumulative");
+      var yAxisPosition = isMobile ? 0 : width1;
+
+svg1.append("g")
+.attr("class", "y axis")
+.attr("transform", "translate(" + yAxisPosition + ",0)")
+.call(yAxis)
+.append("text")
+.attr("class", "label")
+.attr("x", height1 - 145)
+.attr("y", isMobile ? -40 : 60)
+.attr("fill", "black")
+.attr("transform", "rotate(90)")
+.style("text-anchor", "end")
+.style("font-size", isMobile ? "0.8rem" : "1.2vw")
+.text("Ranking Points, cumulative");
      
       }
 
