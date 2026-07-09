@@ -438,14 +438,13 @@ a { color: white; }
     display: block;
 }
 
-.playerList {
-    font-size: 0.8rem;
+.playerList,
+.playerList:hover,
+.playerList:active,
+.playerList:focus {
+    font-size: 0.8rem !important;
     line-height: 1.4;
-	text-align: center;
-}
-
-.playerList:hover {
-    font-size: 0.8rem;
+    text-align: center;
 }
 	
 #player0 {
