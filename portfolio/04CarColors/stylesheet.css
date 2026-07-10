@@ -1,3 +1,6 @@
+.mobile-note {
+  display: none;
+}
 
 #header {
   font-family: 'Oswald', sans-serif;
@@ -106,6 +109,17 @@ h4 {
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+	.mobile-note {
+    display: block;
+    max-width: 640px;
+    margin: 12px auto 24px auto;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    background: #f5f5f5;
+    border-left: 4px solid #222;
+}
 
   h3 {
     font-size: 1.75rem;
