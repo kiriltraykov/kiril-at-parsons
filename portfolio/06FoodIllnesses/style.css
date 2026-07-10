@@ -47,12 +47,12 @@ h3.spaced {
 }
 
 p, li { 
-font-size: 1vw; 
+font-size: 1.1vw; 
 font-family: 'Roboto', sans-serif;
 }
 
 ul { 
-font-size: 1vw; 
+font-size: 1.1vw; 
 font-family: 'Roboto', sans-serif;
 list-style-type: none;
 }
