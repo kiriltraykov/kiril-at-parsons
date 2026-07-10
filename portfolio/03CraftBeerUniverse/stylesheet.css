@@ -177,8 +177,7 @@ h5 {
   display: inline-block;
 }
 
-#footnote1 {
-  color: black;
+#clickBeer, #footnote1 {
   font-size: 1vw;
 }
 
@@ -309,7 +308,7 @@ h3 {
     line-height:1.5;
   }
 
-  #footnote1,
+  #clickBeer, #footnote1,
   #description{
     font-size:1rem;
   }
