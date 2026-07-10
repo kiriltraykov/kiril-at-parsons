@@ -182,9 +182,89 @@ h5 {
 
 #footnote1 {
   color: black;
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 
 #description{
-   font-size: 0.8vw;
+   font-size: 1vw;
+}
+
+@media (max-width:768px){
+
+#box1,
+#box2,
+#box3,
+#box4 {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+#dot1,
+#dot2,
+#dot3,
+#dot4{
+    width:45%;
+    margin:6px 2%;
+    font-size:1rem;
+    padding:12px 0;
+}
+
+#button0,
+#skipIntro{
+    position:static;
+    width:200px;
+    max-width:100%;
+    display:block;
+    margin:16px auto;
+    font-size:1rem;
+}
+
+#buttonArray,
+#d3Holder,
+#listHolder,
+#graphHolder{
+    width:100%;
+    float:none;
+    display:block;
+}
+
+#graphHolder{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+#graphHolder svg{
+    min-width:700px;
+}
+	
+  h3{
+    font-size:1.75rem;
+  }
+
+  #inheader{
+    font-size:1rem;
+  }
+
+  h4{
+    font-size:1.4rem;
+  }
+
+  #li1,#li2,#li3,#li4{
+    font-size:1rem;
+  }
+
+  #comment1,
+  #comment2{
+    font-size:1rem;
+    line-height:1.5;
+  }
+
+  #footnote1,
+  #description{
+    font-size:1rem;
+  }
+
 }
