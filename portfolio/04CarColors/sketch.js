@@ -17,7 +17,10 @@ var p1=0;
 
 
 function setup() {
-    var myCanvas = createCanvas(windowWidth, windowHeight*0.8);
+    var myCanvas = createCanvas(
+    windowWidth < 768 ? 1100 : windowWidth,
+    windowHeight * 0.8
+);
   myCanvas.parent('sketchholder1');
 }
 
