@@ -112,10 +112,7 @@ h4 {
 }
 
 #skipIntro {
-  position: absolute;
   display: block;
-  bottom: 6.5%;
-  margin-left: 1%;
   font-size: 1.5vw;
   background-color: #800000;
   border-color: rgba(105, 157, 182, 0.3);
