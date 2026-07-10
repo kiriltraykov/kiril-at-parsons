@@ -1,0 +1,190 @@
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+#header {
+	width: 100%;
+	text-align: right;
+	background-color: #FF8C00;
+	margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h3 {
+	font-size: 2vw;
+	color: white;
+  margin-bottom: 0%
+}
+
+#inheader {
+  font-size: 1.2vw;
+  color: white;
+  margin-top: 0%;
+}
+
+h4 {
+  font-size: 2vw;
+  color: black;
+}
+
+#box1 {
+ width: 25%;
+ display: inline-block;
+ text-align: right;
+ vertical-align: top;
+}
+
+#box2 {
+ width: 65%;
+ display: inline-block;
+ margin-left: 5%;
+}
+
+#li1, #li2, #li3, #li4 {
+  font-size: 1.2vw;
+}
+
+#box3 {
+ width: 25%;
+ display: inline-block; 
+ text-align: right;
+ vertical-align: top;
+}
+
+#box4 {
+ width: 50%;
+ margin-right: 15%;
+ margin-left: 5%;
+ margin-top: 3%;
+ display: inline-block;
+}
+
+#dot1, #dot2, #dot3, #dot4 {
+  width: 20%;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#dot1 {
+  background-color: #4CB5F5;
+}
+
+#dot2 {
+  background-color: #B7B8B6;
+}
+
+#dot3 {
+  background-color: #7D4427;
+}
+
+#dot4 {
+  background-color: #486B00;
+}
+
+#comment1 {
+  font-size: 1.2vw;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+#comment2 {
+  font-size: 1.2vw;
+  color: black;
+}
+
+#button0 {
+  float: right;
+  margin-right: 5%;
+  font-size: 1.5vw;
+  background-color: #FF8C00;
+  border-radius: 12%;
+  border-color: rgba(105, 157, 182, 0.3);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  color: #FFF;
+  width: 10%;
+}
+
+#skipIntro {
+  position: absolute;
+  display: block;
+  bottom: 6.5%;
+  margin-left: 1%;
+  font-size: 1.5vw;
+  background-color: #800000;
+  border-color: rgba(105, 157, 182, 0.3);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  color: #FFF;
+  width: 15%;
+}
+
+#button0:hover, #skipIntro:hover {
+    background-color: #000;
+    border-color: rgba(0,0,0,0.5);
+  }
+  
+#button0:active, #skipIntro:hover {
+    background-color: #000;
+    border-color: rgba(0,0,0,0.9);
+  }
+
+  #buttonArray{
+    width: 15%;
+    display: inline-block;
+  }
+
+  #button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9, #button10, #button11, #button12 {
+  display: block;
+  text-align: left;
+  margin-top: 0.65%;
+  font-size: 1.2vw;
+  color: black;
+  border: dashed 2px #000;
+  width: 100%;
+}
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover, #button6:hover, #button7:hover, #button8:hover, #button9:hover, #button10:hover, #button11:hover, #button12:hover {
+    background-color: #FF8C00;
+    color: white;
+    border-color: rgba(0,0,0,0.5);
+  }
+  
+#button1:active, #button2:active, #button3:active, #button4:active, #button5:active, #button6:active, #button7:active, #button8:active, #button9:active, #button10:active, #button11:active, #button12:active {
+    background-color: #FF8C00;
+    color: white;
+    border-color: rgba(0,0,0,0.9);
+  }
+
+
+h5 {
+  margin-bottom: 0%;
+}
+
+#d3Holder{
+  float: right;
+  width: 85%;
+  display: inline-block;
+}
+
+#listHolder{
+  width: 30%;
+  display: inline-block;
+}
+
+#graphHolder{
+  float: right;
+  width: 70%;
+  display: inline-block;
+}
+
+#footnote1 {
+  color: black;
+  font-size: 0.8vw;
+}
+
+#description{
+   font-size: 0.8vw;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<title>CraftBeerUniverse</title>
+	</head>
+	<body>
+
+		
+
+		<h6>/<a href="https://kiriltraykov.github.io/Portfolio/">Welcome Page</a>
+		&nbsp; &nbsp; 
+		/<a href="https://kiriltraykov.github.io/Projects/">Projects Page</a></h6>
+
+		<div id = "header">
+		<h3>Craft Beer Primer &nbsp; &nbsp;</h3>
+    <p id="inheader">A universe of 48,008 craft beer in the USA &nbsp; &nbsp;</p>	
+		</div>
+
+    <div id= "box1"><h4 id="statement1">Craft Beer in Brief</h4></div>
+    
+    <div id= "box2">
+    <ul>
+      <li id="li1">A craft brewery is a brewery that produces a small amount of beer</li>
+      <li id="li2">Craft breweries are independent and specialize in producing rarer beer styles</li>
+      <li id="li3">The Brewers Association reports that the average American lives within 10 miles of a craft brewery</li>
+      <li id="li4">The U.S. has more craft beer styles and brands to choose from than any other market in the world</li>
+    </ul>  
+    </div>
+
+     <div id= "box3"><h4 id="statement2">Beer Ingredients</h4></div>
+
+    <div id= "box4">
+    <span class="dot" id="dot1">Water</span>
+    <span class="dot" id="dot2">Yeast</span>
+    <span class="dot" id="dot3">Malt</span>
+    <span class="dot" id="dot4">Hops</span>
+    <p id="comment1"><b>Yeast</b> can be of two types: <b>Ale</b> or <b>Lager</b> and feasts on sugar during fermentation and expels alcohol, carbon dioxide (CO2), and flavor compunds. The alcohol expelled gives the beer its <b>Alcohol By Volume (ABV)</b> percent.</p>
+    <p id="comment2"><b>Hops</b> add bitterness to the beer. There is a standardized <b>International Bitterness Units (IBU)</b> scale that measures the bitterness of beer. It ranges from 0 to 100.</p>
+    <h4 id="statement3">We will measure the craft beers by ABV and IBU!</h4>
+    </div>
+
+     <button id="skipIntro">Skip Introduction</button>
+     <button id="button0">NEXT</button>
+
+     <p id = "footnote1">Source: BreweryDB with data from November 2015, public API available at <a href="http://www.brewerydb.com/developers">http://www.brewerydb.com/developers</a></p>
+
+      <div id="buttonArray">
+      <h5>Ale Beers (71%):</h5>
+      <button id="button1">North American</button>
+      <button id="button2">British</button>
+      <button id="button3">Belgian & French</button>
+      <button id="button4">German</button>
+      <button id="button5">Irish</button>
+      <button id="button6">International</button>
+      <h5>Lager Beers (13%):</h5>      
+      <button id="button7">Euro-Germanic</button>
+      <button id="button8">North American</button>
+      <button id="button9">International</button>
+      <h5>Other Beers (16%):</h5>
+      <button id="button10">Hybrid/Mixed Beer</button>
+      <button id="button11">Mead Cider & Perry</button>
+      <button id="button12">Malternative Beverages</button>
+      <p id="description"></p>
+      </div>
+
+      <div id="d3Holder">
+      <div id="listHolder"></div>
+      <div id="graphHolder"></div>
+      </div>
+
+    <script src='jquery-3.2.1.min.js'></script>
+    <script src="d3/d3.js"></script>
+    <script src='beers.js'></script>
+    <script src='main.js'></script>
+	</body>
+</html>
