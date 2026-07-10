@@ -1,0 +1,233 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "Animal Origin",
+   "children": [
+    {
+     "name": "Cheese, Milk & Butter",
+     "children": [
+      {"name": "Butter", "size": 1},
+      {"name": "Cheese", "size": 5},
+      {"name": "Cream", "size": 2},
+      {"name": "Milk", "size": 17},
+      {"name": "Ice-Cream", "size": 1},
+      {"name": "Frozen Yogurt", "size": 1}
+     ]
+    },
+    {
+     "name": "Eggs",
+     "children": [
+      {"name": "Eggs", "size": 7}
+     ]
+    },
+    {
+     "name": "Meat: Acquatic",
+     "children": [
+      {"name": "Baracuda", "size": 3},
+      {"name": "Bass", "size": 1},
+      {"name": "Clams", "size": 1},
+      {"name": "Crab", "size": 2},
+      {"name": "Crawfish", "size": 2},
+      {"name": "Grouper", "size": 4},
+      {"name": "Mahi Mahi", "size": 1},
+      {"name": "Oysters", "size": 17},
+      {"name": "Reel", "size": 1},
+      {"name": "Salmon", "size": 4},
+      {"name": "Scallops", "size": 1},
+      {"name": "Seafood", "size": 3},
+      {"name": "Seal", "size": 1},
+      {"name": "Shrimp", "size": 3},
+      {"name": "Sushi", "size": 4},
+      {"name": "Tuna", "size": 13},
+      {"name": "Paella", "size": 1},
+      {"name": "Amberjack", "size": 8},
+      {"name": "Almaco Jack", "size": 1},
+      {"name": "Puffer", "size": 1},
+      {"name": "Mackeral", "size": 1},
+      {"name": "Fish Stew", "size": 1},
+      {"name": "Other Fish", "size": 2}
+     ]
+    },
+        {
+     "name": "Meat: Cattle & Wild",
+     "children": [
+      {"name": "Bear", "size": 2},
+      {"name": "Beef", "size": 22},
+      {"name": "Goat", "size": 1},
+      {"name": "Ham", "size": 1},
+      {"name": "Other Meat", "size": 7},
+      {"name": "Pork", "size": 15},
+      {"name": "Salami", "size": 2},
+      {"name": "Sausage", "size": 2}
+   ]
+  },
+     {
+     "name": "Meat: Poultry",
+     "children": [
+      {"name": "Chicken", "size": 40},
+      {"name": "Duck", "size": 1},
+      {"name": "Turkey", "size": 9}
+   ]
+  }
+  ]
+  },
+
+  {
+   "name": "Bakery",
+   "children": [
+    {
+     "name": "Bread & Pizza",
+     "children": [
+      {"name": "Bread", "size": 4},
+      {"name": "Dip / Nachos", "size": 4},
+      {"name": "Pizza", "size": 2}
+           ]
+    },
+     {
+     "name": "Pasta & Noodles",
+     "children": [
+      {"name": "Noodles", "size": 1},
+      {"name": "Pasta", "size": 9}
+           ]
+    }, {
+     "name": "Pastries",
+     "children": [
+      {"name": "Cake", "size": 1},
+      {"name": "Candy", "size": 1},
+      {"name": "Caramel", "size": 1},
+      {"name": "Chocolate", "size": 3},
+      {"name": "Cookies", "size": 3},
+      {"name": "Danish", "size": 1},
+      {"name": "Cupcake", "size": 1},
+      {"name": "Pie", "size": 1}
+           ]
+    }
+    ]
+    },
+        {
+   "name": "Beverages",
+   "children": [
+    {
+     "name": "Alcohol",
+     "children": [
+      {"name": "Alcohol", "size": 1}
+           ]
+    },
+     {
+     "name": "Juice",
+     "children": [
+      {"name": "Fruit Juice", "size": 3}
+           ]
+    },
+      {
+     "name": "Coffee",
+     "children": [
+      {"name": "Coffee", "size": 1}
+           ]
+    },
+       {
+     "name": "Water",
+     "children": [
+      {"name": "Water & Ice", "size": 1}
+           ]
+    }
+    ]
+  },
+         {
+   "name": "Non-identifiable",
+   "children": [
+    {
+     "name": "Other",
+     "children": [
+      {"name": "Other", "size": 24}
+           ]
+  }
+  ]
+  },
+          {
+   "name": "Plant Origin",
+   "children": [
+    {
+     "name": "Beans",
+     "children": [
+      {"name": "Beans", "size": 10},
+      {"name": "Rice", "size": 8}
+           ]
+  },
+  {
+     "name": "Cereal Grains",
+     "children": [
+      {"name": "Corn", "size": 1},
+      {"name": "Other Grains", "size": 1}
+           ]
+  },
+   {
+     "name": "Fruits",
+     "children": [
+      {"name": "Berries", "size": 1},
+      {"name": "Grapes", "size": 1},
+      {"name": "Mango", "size": 2},
+      {"name": "Peaches", "size": 1},
+      {"name": "Fruit Salads", "size": 4}
+           ]
+  },
+    {
+     "name": "Green Salads",
+     "children": [
+      {"name": "Green Salads", "size": 12}
+           ]
+  },
+    {
+     "name": "Nuts & Seeds",
+     "children": [
+      {"name": "Cashew", "size": 1}
+           ]
+  },
+     {
+     "name": "Spices, Herbs & Teas",
+     "children": [
+      {"name": "Spices", "size": 1},
+      {"name": "Basil", "size": 1}
+           ]
+  },
+   {
+     "name": "Vegetables",
+     "children": [
+      {"name": "Artichoke", "size": 1},
+      {"name": "Avocado", "size": 1},
+      {"name": "Broccoli", "size": 1},
+      {"name": "Cabbage", "size": 4},
+      {"name": "Celery", "size": 1},
+      {"name": "Chips (Potato)", "size": 2},
+      {"name": "Cucumber", "size": 5},
+      {"name": "Guacamole", "size": 1},
+      {"name": "Hummus", "size": 2},
+      {"name": "Kale", "size": 1},
+      {"name": "Lettuce", "size": 9},
+      {"name": "Mushrooms", "size": 5},
+      {"name": "Onions", "size": 1},
+      {"name": "General Greens", "size": 3},
+      {"name": "Peppers", "size": 1},
+      {"name": "Potatoes", "size": 3},
+      {"name": "Spinach", "size": 2},
+      {"name": "Sprouts", "size": 2},
+      {"name": "Tomatoes", "size": 2}
+           ]
+  }
+  ]
+  },
+   {
+   "name": "Sauce",
+   "children": [
+    {
+     "name": "Sauce",
+     "children": [
+      {"name": "Sauce", "size": 9}
+           ]
+  }
+  ]
+  }
+
+ ]
+}
