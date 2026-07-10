@@ -23,6 +23,7 @@
         $('#box3').remove();
         $('#box4').remove();
         $('#footnote1').show();
+        $('#clickBeer').show();
         $('h5').show();
         $('#button1').show();
         $('#button2').show();
@@ -44,6 +45,7 @@
         });
 
         $('#footnote1').hide();
+        $('#clickBeer').hide();
         $('#statement1').hide();
         $('#li1').hide();
         $('#li2').hide();
@@ -112,6 +114,7 @@
         $('#box3').remove();
         $('#box4').remove();
         $('#footnote1').show();
+        $('#clickBeer').show();
         $('h5').show();
         $('#button1').show();
         $('#button2').show();
