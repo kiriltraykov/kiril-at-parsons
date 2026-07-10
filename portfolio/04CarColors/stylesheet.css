@@ -54,14 +54,14 @@ h4 {
   }
 
 #footnote1 {
-  font-size: 0.8vw;
+  font-size: 1vw;
   margin: 0%;
   position: absolute;
   bottom: 4%;
 }
 
 #footnote2 {
-	font-size: 0.8vw;
+	font-size: 1vw;
   position: absolute;
   bottom: 0%;
 }
@@ -148,7 +148,7 @@ h4 {
   #footnote1,
   #footnote2 {
     position: static;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 100%;
     margin-top: 12px;
   }
