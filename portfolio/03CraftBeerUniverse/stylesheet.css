@@ -271,6 +271,11 @@ h5 {
     text-align: center;
 }
 
+#description {
+    display: none;
+}
+
+
 h3 {
     font-size: 1.75rem;
 }
