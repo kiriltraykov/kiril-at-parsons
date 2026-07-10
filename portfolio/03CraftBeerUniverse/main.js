@@ -1,10 +1,6 @@
 
    $(document).ready(function(){
 
-      if (window.innerWidth <= 768) {
-    $('#skipIntro').click();
-}
-
         $('#skipIntro').on('click', function(){
 
         $('#statement1').remove();
