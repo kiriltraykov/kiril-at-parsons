@@ -10,14 +10,14 @@
 	right: 50px;
 }
 
-.to-the-left {
-	width: 40%;
-	float: left;
-}
-
 .to-the-right {
 	width: 50%;
 	float: right;
+}
+
+.to-the-left {
+	width: 40%;
+	float: left;
 }
 
 .to-the-right2 {
