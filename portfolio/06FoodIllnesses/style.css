@@ -138,11 +138,6 @@ list-style-type: none;
   text-anchor: middle;
   /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;*/
 }
-@media only screen and (max-width: 768px){
-  .label {
-    font-size: 15px;
-  }
-}
 
 .node--root{
   display: none;
@@ -183,7 +178,7 @@ path {
 /*Sources*/
 
  #sources p {
-  font-size: 0.8vw;
+  font-size: 1vw;
   clear: both;
 }
 
