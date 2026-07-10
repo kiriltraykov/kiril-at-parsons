@@ -233,25 +233,15 @@ h5 {
     font-size:1rem;
 }
 	
-buttonArray {
-    width: 35%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-	
-#d3Holder {
-    width: 63%;
-    display: inline-block;
-}
-
+#buttonArray,
+#d3Holder,
 #listHolder,
-#graphHolder{
-    width:100%;
-    float:none;
-    display:block;
+#graphHolder {
+    width: 100%;
+    float: none;
+    display: block;
 }
-
+	
 #button1,
 #button2,
 #button3,
@@ -264,7 +254,8 @@ buttonArray {
 #button10,
 #button11,
 #button12 {
-    font-size: 1.05rem;
+    font-size: 1rem;
+    padding: 10px 12px;
 }
 
 #graphHolder{
@@ -291,6 +282,12 @@ h3 {
   h4{
     font-size:1.4rem;
   }
+
+	h5 {
+    font-size: 1.1rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
 
   #li1,#li2,#li3,#li4{
     font-size:1rem;
