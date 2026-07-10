@@ -130,7 +130,7 @@ h4 {
   }
 
   #buttonArray{
-    width: 15%;
+    width: 20%;
     display: inline-block;
   }
 
@@ -163,7 +163,7 @@ h5 {
 
 #d3Holder{
   float: right;
-  width: 85%;
+  width: 80%;
   display: inline-block;
 }
 
