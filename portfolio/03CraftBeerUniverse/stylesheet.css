@@ -236,14 +236,39 @@ h5 {
     margin:16px auto;
     font-size:1rem;
 }
+	
+buttonArray {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
 
-#buttonArray,
-#d3Holder,
+	
+#d3Holder {
+    width: 63%;
+    display: inline-block;
+}
+
 #listHolder,
 #graphHolder{
     width:100%;
     float:none;
     display:block;
+}
+
+#button1,
+#button2,
+#button3,
+#button4,
+#button5,
+#button6,
+#button7,
+#button8,
+#button9,
+#button10,
+#button11,
+#button12 {
+    font-size: 1.05rem;
 }
 
 #graphHolder{
@@ -255,7 +280,7 @@ h5 {
     min-width:700px;
 }
 
-	#header {
+#header {
     text-align: center;
 }
 
@@ -274,6 +299,10 @@ h3 {
   #li1,#li2,#li3,#li4{
     font-size:1rem;
   }
+	
+	svg text {
+    font-size: 1rem !important;
+}
 
   #comment1,
   #comment2{
