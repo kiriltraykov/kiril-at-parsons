@@ -3,10 +3,6 @@
 
         $('#skipIntro').on('click', function(){
 
-           if (window.innerWidth <= 768) {
-    $('#description').appendTo('#d3Holder');
-}
-
         $('#statement1').remove();
         $('#li1').remove();
         $('#li2').remove();
