@@ -94,3 +94,63 @@ h4 {
 }
 
 /* For Dendogram FINISH */
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #header {
+    text-align: center;
+  }
+
+  #button0 {
+    width: 120px;
+    font-size: 1rem;
+    display: block;
+    margin: 16px auto;
+  }
+
+  #dendogramholder {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #dendogramholder svg {
+    min-width: 840px;
+    display: block;
+  }
+
+  .node text {
+    font: 0.9rem sans-serif;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  #footnote1,
+  #footnote2 {
+    position: static;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+}
