@@ -254,14 +254,18 @@ h5 {
 #graphHolder svg{
     min-width:700px;
 }
-	
-  h3{
-    font-size:1.75rem;
-  }
 
-  #inheader{
-    font-size:1rem;
-  }
+	#header {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+#inheader {
+    font-size: 1rem;
+}
 
   h4{
     font-size:1.4rem;
