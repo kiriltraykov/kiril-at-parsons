@@ -1353,231 +1353,256 @@ var beers = [
   }
 ];
 
-var isMobile = window.innerWidth <= 768;
-
 function drawGraph(styleSelection) {
 
-   beers.forEach(function(d) {
+  var isMobile = window.innerWidth <= 768;
 
-         if (d.avgIbu == ""){
-          d.avgIbu = 0;
-         }
-         d.avgIbu = parseFloat(d.avgIbu);
+  beers.forEach(function(d) {
 
-         if (d.count == ""){
-          d.count = 0;
-         }
-         d.count = parseFloat(d.count);
-        
-        if (d.avgAbv == ""){
-          d.avgAbv = 0;
-         }
-         d.avgAbv = parseFloat(d.avgAbv);
-    });
+    if (d.avgIbu == "") {
+      d.avgIbu = 0;
+    }
+    d.avgIbu = parseFloat(d.avgIbu);
+
+    if (d.count == "") {
+      d.count = 0;
+    }
+    d.count = parseFloat(d.count);
+
+    if (d.avgAbv == "") {
+      d.avgAbv = 0;
+    }
+    d.avgAbv = parseFloat(d.avgAbv);
+  });
 
 
-      var margin1 = {top1: 100, right1: 20, bottom1: 20, left1: 20},
+  var margin1 = {top1: 100, right1: 20, bottom1: 20, left1: 20},
       width1 = 800 - margin1.left1 - margin1.right1,
       height1 = 230 - margin1.top1 - margin1.bottom1;
 
-      var svg1 = d3.select("#graphHolder").append("svg")
-      .attr("width", width1 + margin1.left1 + margin1.right1)
-      .attr("height", height1 + margin1.top1 + margin1.bottom1)
-      .append("g")
-      .attr("transform", "translate(" + margin1.left1 + "," + margin1.top1 + ")");
-  
-      var x1 = d3.scale.linear()
-      .domain([0, 15])
-      .range([0, width1])
+  var svg1 = d3.select("#graphHolder").append("svg")
+    .attr("width", width1 + margin1.left1 + margin1.right1)
+    .attr("height", height1 + margin1.top1 + margin1.bottom1)
+    .append("g")
+    .attr("transform", "translate(" + margin1.left1 + "," + margin1.top1 + ")");
 
-      // find min, max, avg, ...
-      // d3.max(beers, function(beer) {
-      //   return beer.avgIbu;  
-      // }) 
+  var x1 = d3.scale.linear()
+    .domain([0, 15])
+    .range([0, width1]);
 
-      var r1 = d3.scale.sqrt()
-      .domain([0, 4346])
-      .range([0,100])
+  var r1 = d3.scale.sqrt()
+    .domain([0, 4346])
+    .range([0, 100]);
+
+  var xAxis1 = d3.svg.axis()
+    .scale(x1)
+    .ticks(13)
+    .orient("bottom");
+
+  svg1.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height1 + ")")
+    .call(xAxis1)
+    .append("text")
+    .attr("class", "label")
+    .attr("x", width1)
+    .style("text-anchor", "end")
+    .style("font-size", isMobile ? "1rem" : "1vw")
+    .text("Alcohol By Volume (ABV)");
+
+  svg1.selectAll(".dot")
+    .data(beers)
+    .enter()
+    .append("circle")
+    .attr("class", "dot")
+    .filter(function(d) { return d.style == styleSelection; })
+    .attr("r", function(d) { return r1(d.count); })
+    .style("fill", "#556B2F")
+    .style("opacity", "0.5")
+    .attr("cx", function(d) { return x1(d.avgAbv); });
 
 
-      var xAxis1 = d3.svg.axis()
-      .scale(x1)
-      .ticks(13)
-      .orient("bottom");
+  // SECOND GRAPH for IBU
 
-      svg1.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height1 + ")")
-      .call(xAxis1)
-      .append("text")
-      .attr("class", "label")
-      .attr("x", width1)
-      .style("text-anchor", "end")
-      .style("font-size", isMobile ? "1rem" : "1vw")
-      .text("Alcohol By Volume (ABV)");
-
-       svg1.selectAll(".dot")
-      .data(beers)
-      .enter().append("circle")
-      .attr("class", "dot")
-      .filter(function(d) { return d.style == styleSelection })
-      .attr("r", function(d) { return r1(d.count); })
-      .style("fill","#556B2F")
-      .style("opacity","0.5")
-      .attr("cx", function(d) { return x1(d.avgAbv); })
-
-      //SECOND GRAPH for IBU
-
-      var margin2 = {top2: 110, right2: 20, bottom2: 20, left2: 20},
+  var margin2 = {top2: 110, right2: 20, bottom2: 20, left2: 20},
       width2 = 800 - margin2.left2 - margin2.right2,
       height2 = 240 - margin2.top2 - margin2.bottom2;
 
-      var svg2 = d3.select("#graphHolder").append("svg")
-      .attr("width", width2 + margin2.left2 + margin2.right2)
-      .attr("height", height2 + margin2.top2 + margin2.bottom2)
-      .append("g")
-      .attr("transform", "translate(" + margin2.left2 + "," + margin2.top2 + ")");
-  
-      var x2 = d3.scale.linear()
-      .domain([0, 100])
-      .range([0, width2])
+  var svg2 = d3.select("#graphHolder").append("svg")
+    .attr("width", width2 + margin2.left2 + margin2.right2)
+    .attr("height", height2 + margin2.top2 + margin2.bottom2)
+    .append("g")
+    .attr("transform", "translate(" + margin2.left2 + "," + margin2.top2 + ")");
 
-      // find min, max, avg, ...
-      // d3.max(beers, function(beer) {
-      //   return beer.avgIbu;  
-      // }) 
+  var x2 = d3.scale.linear()
+    .domain([0, 100])
+    .range([0, width2]);
 
-      var r2 = d3.scale.sqrt()
-      .domain([0, 4346])
-      .range([0,100])
+  var r2 = d3.scale.sqrt()
+    .domain([0, 4346])
+    .range([0, 100]);
+
+  var xAxis2 = d3.svg.axis()
+    .scale(x2)
+    .ticks(8)
+    .orient("bottom");
+
+  svg2.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height2 + ")")
+    .call(xAxis2)
+    .append("text")
+    .attr("class", "label")
+    .attr("x", width2)
+    .style("text-anchor", "end")
+    .style("font-size", isMobile ? "1rem" : "1vw")
+    .text("International Bitterness Unit (IBU)");
+
+  svg2.selectAll(".dot")
+    .data(beers)
+    .enter()
+    .append("circle")
+    .attr("class", "dot")
+    .filter(function(d) { return d.style == styleSelection; })
+    .attr("r", function(d) { return r2(d.count); })
+    .style("fill", "#5D478B")
+    .style("opacity", "0.5")
+    .attr("cx", function(d) { return x2(d.avgIbu); });
 
 
-      var xAxis2 = d3.svg.axis()
-      .scale(x2)
-      .ticks(8)
-      .orient("bottom");
+  // List of the Beers
 
-      svg2.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height2 + ")")
-      .call(xAxis2)
-      .append("text")
-      .attr("class", "label")
-      .attr("x", width2)
-      .style("text-anchor", "end")
-      .style("font-size", isMobile ? "1rem" : "1vw")
-      .text("International Bitterness Unit (IBU)");
+  var selectedBeers = beers.filter(function(d) {
+    return d.style == styleSelection;
+  });
 
-       svg2.selectAll(".dot")
-      .data(beers)
-      .enter().append("circle")
-      .attr("class", "dot")
-      .filter(function(d) { return d.style == styleSelection })
-      .attr("r", function(d) { return r2(d.count); })
-      .style("fill","#5D478B")
-      .style("opacity","0.5")
-      .attr("cx", function(d) { return x2(d.avgIbu); })
+  var subStylesList = d3.select("#listHolder")
+    .append("ol")
+    .text(isMobile ? "Tap a Substyle (# of beers):" : "Hover over the Substyles (# of beers):")
+    .style("font-size", isMobile ? "1rem" : "1vw")
+    .style("font-family", "'Muli', sans-serif")
+    .style("font-style", "italic");
 
-      //List of the Beers
+  subStylesList.selectAll("li")
+    .data(selectedBeers)
+    .enter()
+    .append("li")
+    .text(function(d) {
+      return d.subStyle + " (" + d.count + ")";
+    })
+    .style("font-style", "normal")
+    .style("font-size", isMobile ? "1rem" : "1vw")
+    .style("line-height", isMobile ? "1.5" : "normal")
+    .style("cursor", "pointer");
 
-      var subStylesList = d3.select('#listHolder').append('ol')
-      .text("Hover over the Substyles (# of beers):")
-      .style("font-size", isMobile ? "1rem" : "1vw")
-      .style("font-family", "'Muli', sans-serif")
-      .style("font-style", "italic");
 
-      subStylesList.selectAll('li')
-      .data(beers)
-      .enter()
-      .append('li')
-      .filter(function(d) { return d.style == styleSelection; })
-      .text(function(d) { return d.subStyle + " (" + d.count + ")";})           
-      .style("font-style", "normal");
-      
+  d3.selection.prototype.moveToFront = function() {
+    return this.each(function() {
+      this.parentNode.appendChild(this);
+    });
+  };
 
-      subStylesList.selectAll('li')
+
+  function resetSubstyleHighlight() {
+
+    subStylesList.selectAll("li")
+      .style("color", "black")
+      .style("font-size", isMobile ? "1rem" : "1vw");
+
+    svg1.selectAll(".dot")
+      .style("fill", "#556B2F")
+      .style("opacity", "0.5");
+
+    svg2.selectAll(".dot")
+      .style("fill", "#5D478B")
+      .style("opacity", "0.5");
+
+    d3.select("#description")
+      .text("");
+  }
+
+
+  function activateSubstyle(element) {
+
+    var selectedSubStyle = d3.select(element).data();
+    var selectedSubStyleNow = selectedSubStyle[0]["subStyle"];
+    var descriptionSubStyle = selectedSubStyle[0]["description"];
+
+    d3.select(element)
+      .style("color", "#800000")
+      .style("font-size", isMobile ? "1.1rem" : "1.5vw");
+
+    svg1.selectAll(".dot")
+      .filter(function(d) {
+        return d.subStyle == selectedSubStyleNow;
+      })
+      .moveToFront()
+      .style("fill", "#800000")
+      .style("opacity", "1");
+
+    svg2.selectAll(".dot")
+      .filter(function(d) {
+        return d.subStyle == selectedSubStyleNow;
+      })
+      .moveToFront()
+      .style("fill", "#800000")
+      .style("opacity", "1");
+
+    d3.select("#description")
+      .text(descriptionSubStyle);
+  }
+
+
+  if (isMobile) {
+
+    subStylesList.selectAll("li")
+      .on("click", function() {
+        resetSubstyleHighlight();
+        activateSubstyle(this);
+      });
+
+  } else {
+
+    subStylesList.selectAll("li")
       .on("mouseenter", function() {
 
-        $('h5').hide();
-        $('#button1').hide();
-        $('#button2').hide();
-        $('#button3').hide();
-        $('#button4').hide();
-        $('#button5').hide();
-        $('#button6').hide();
-        $('#button7').hide();
-        $('#button8').hide();
-        $('#button9').hide();
-        $('#button10').hide();
-        $('#button11').hide();
-        $('#button12').hide();
+        $("h5").hide();
+        $("#button1").hide();
+        $("#button2").hide();
+        $("#button3").hide();
+        $("#button4").hide();
+        $("#button5").hide();
+        $("#button6").hide();
+        $("#button7").hide();
+        $("#button8").hide();
+        $("#button9").hide();
+        $("#button10").hide();
+        $("#button11").hide();
+        $("#button12").hide();
 
-        d3.selection.prototype.moveToFront = function() {  
-        return this.each(function(){
-        this.parentNode.appendChild(this);
-         });
-         }
-
-        d3.select(this)  
-            .style("color", "#800000")
-            .style("font-size", isMobile ? "1.1rem" : "1.5vw")
-         
-        var selectedSubStyle = d3.select(this).data();
-        selectedSubStyleNow = selectedSubStyle[0]["subStyle"]
-        descriptionSubStyle = selectedSubStyle[0]["description"]
-        svg1.selectAll(".dot")
-        .filter(function(d) { return d.subStyle == selectedSubStyleNow; })
-        .moveToFront()
-        .style("fill", "#800000")
-        .style("opacity", "1")
-        svg2.selectAll(".dot")
-        .filter(function(d) { return d.subStyle == selectedSubStyleNow; })
-        .moveToFront()
-        .style("fill", "#800000")
-        .style("opacity", "1")
-        d3.select("#description")
-        .text(descriptionSubStyle);
+        resetSubstyleHighlight();
+        activateSubstyle(this);
       })
-
 
       .on("mouseout", function() {
 
-        $('h5').show();
-        $('#button1').show();
-        $('#button2').show();
-        $('#button3').show();
-        $('#button4').show();
-        $('#button5').show();
-        $('#button6').show();
-        $('#button7').show();
-        $('#button8').show();
-        $('#button9').show();
-        $('#button10').show();
-        $('#button11').show();
-        $('#button12').show();
+        $("h5").show();
+        $("#button1").show();
+        $("#button2").show();
+        $("#button3").show();
+        $("#button4").show();
+        $("#button5").show();
+        $("#button6").show();
+        $("#button7").show();
+        $("#button8").show();
+        $("#button9").show();
+        $("#button10").show();
+        $("#button11").show();
+        $("#button12").show();
 
-        d3.select(this)  
-            .style("color", "black")
-            .style("font-size", isMobile ? "1rem" : "1vw")
-         
-         var selectedSubStyle = d3.select(this).data();
-         selectedSubStyleNow = selectedSubStyle[0]["subStyle"]
-         svg1.selectAll(".dot")
-        .filter(function(d) { return d.subStyle == selectedSubStyleNow; })
-        .style("fill","#556B2F")
-        .style("opacity","0.5")
-         svg2.selectAll(".dot")
-        .filter(function(d) { return d.subStyle == selectedSubStyleNow; })
-        .style("fill","#5D478B")
-        .style("opacity","0.5")
-        d3.select("#description")
-        .text("");
+        resetSubstyleHighlight();
       });
+  }
 
-
-      subStylesList.selectAll('li')
-      .filter(function(d) { return d.style !== styleSelection; })
-      .remove();
-
-};
+}
 
