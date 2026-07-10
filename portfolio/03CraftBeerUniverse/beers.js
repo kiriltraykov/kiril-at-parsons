@@ -1353,7 +1353,7 @@ var beers = [
   }
 ];
 
-
+var isMobile = window.innerWidth <= 768;
 
 function drawGraph(styleSelection) {
 
@@ -1413,7 +1413,7 @@ function drawGraph(styleSelection) {
       .attr("class", "label")
       .attr("x", width1)
       .style("text-anchor", "end")
-      .style("font-size", "1vw")
+      .style("font-size", isMobile ? "1rem" : "1vw")
       .text("Alcohol By Volume (ABV)");
 
        svg1.selectAll(".dot")
@@ -1465,7 +1465,7 @@ function drawGraph(styleSelection) {
       .attr("class", "label")
       .attr("x", width2)
       .style("text-anchor", "end")
-      .style("font-size", "1vw")
+      .style("font-size", isMobile ? "1rem" : "1vw")
       .text("International Bitterness Unit (IBU)");
 
        svg2.selectAll(".dot")
@@ -1482,7 +1482,7 @@ function drawGraph(styleSelection) {
 
       var subStylesList = d3.select('#listHolder').append('ol')
       .text("Hover over the Substyles (# of beers):")
-      .style("font-size", "1vw")
+      .style("font-size", isMobile ? "1rem" : "1vw")
       .style("font-family", "'Muli', sans-serif")
       .style("font-style", "italic");
 
@@ -1520,7 +1520,7 @@ function drawGraph(styleSelection) {
 
         d3.select(this)  
             .style("color", "#800000")
-            .style("font-size", "1.5vw")
+            .style("font-size", isMobile ? "1.1rem" : "1.5vw")
          
         var selectedSubStyle = d3.select(this).data();
         selectedSubStyleNow = selectedSubStyle[0]["subStyle"]
