@@ -145,6 +145,17 @@ h4 {
     font-family: 'Oswald', sans-serif;
   }
 
+	#sketchholder1 {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+	#sketchholder1 canvas {
+    min-width: 1100px;
+    display: block;
+}
+
   #footnote1,
   #footnote2 {
     position: static;
