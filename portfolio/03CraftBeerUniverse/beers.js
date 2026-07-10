@@ -1558,7 +1558,7 @@ function drawGraph(styleSelection) {
 
         d3.select(this)  
             .style("color", "black")
-            .style("font-size", "1vw")
+            .style("font-size", isMobile ? "1rem" : "1vw")
          
          var selectedSubStyle = d3.select(this).data();
          selectedSubStyleNow = selectedSubStyle[0]["subStyle"]
