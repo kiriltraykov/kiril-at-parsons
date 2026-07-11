@@ -289,6 +289,8 @@ if(firstcall){
          .size([width, height]);
 
      var path = sankey.link();
+  var isMobile = window.innerWidth <= 768;
+  var sankeyTooltip = d3.select('body').append('div').attr('class', 'tooltip');
      d3.json("sleepingalone.json", function(sleeping) {
          sankey
              .nodes(sleeping.nodes)
@@ -311,6 +313,22 @@ if(firstcall){
              .text(function(d) {
                  return d.source.name + " → " + d.target.name + "\n" + format(d.value);
              });
+
+      if (isMobile) {
+    link.on("click", function(d) {
+        sankeyTooltip.classed("show", true);
+        sankeyTooltip.text(d.source.name + " → " + d.target.name + ": " + format(d.value));
+
+        sankeyTooltip.style({
+            top: (d3.event.pageY + 12) + "px",
+            left: "18px",
+            right: "18px"
+        });
+
+        link.style("stroke-opacity", 0.15);
+        d3.select(this).style("stroke-opacity", 0.7);
+    });
+}
 
          var node = svg.append("g").selectAll(".node")
              .data(sleeping.nodes)
@@ -335,6 +353,19 @@ if(firstcall){
              .text(function(d) {
                  return d.name + "\n" + format(d.value);
              });
+
+      if (isMobile) {
+    node.on("click", function(d) {
+        sankeyTooltip.classed("show", true);
+        sankeyTooltip.text(d.name + ": " + format(d.value));
+
+        sankeyTooltip.style({
+            top: (d3.event.pageY + 12) + "px",
+            left: "18px",
+            right: "18px"
+        });
+    });
+}
 
          node.append("text")
              .attr("x", -6)
