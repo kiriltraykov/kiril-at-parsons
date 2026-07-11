@@ -148,47 +148,63 @@ ul {
 
 @media (max-width:768px){
 
-#container{
-      width: auto;
-      max-width: 700px;
-      margin-left: 16px;
-      margin-right: 16px;
-      position: static;
+body {
+    margin: 0;
+    padding: 0;
   }
 
-	
-  h1{
-    font-size:2rem;
-    line-height:1.25;
+  #container {
+    width: auto;
+    max-width: 700px;
+    position: static;
+    margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
-  h3{
-    font-size:1.4rem;
+  
+h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+    line-height: 1.35;
   }
 
   p,
-  li{
-    font-size:1rem;
-    line-height:1.6;
+  li {
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 
-#chart{
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-}
-
-  #chart svg{
-      min-width:1000px;
+#chart {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
   }
 
+  #chart svg {
+    min-width: 1000px;
+    max-width: none;
+    display: block;
+  }
 	
-#chart2{
-      overflow-x:auto;
-      margin-left:0;
+
+#chart2 {
+    margin-left: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  #chart2 svg{
-      min-width:700px;
+  #chart2 svg {
+    min-width: 800px;
+    max-width: none;
+    display: block;
   }
 
 }
