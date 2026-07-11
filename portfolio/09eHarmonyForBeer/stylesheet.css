@@ -130,7 +130,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
 
-    padding-top: 180px;
+    padding-top: 240px;
 }
 
 	h1 {
@@ -142,10 +142,14 @@ body {
 p,
 form {
     margin-left: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
-#line2,
+#line2 {
+    font-size: 1.6rem;
+	text-align: center;
+}
+
 #cheers {
     font-size: 1.5rem;
 }
@@ -153,7 +157,7 @@ form {
 	#beginButton {
     display:block;
     margin:20px auto;
-    font-size:1rem;
+    font-size:1.1rem;
 }
 
 #submit1,
@@ -165,7 +169,7 @@ form {
 }
 
 #takeMeToResults {
-    font-size:1rem;
+    font-size:1.1rem;
 }
 	
   #beerResults {
