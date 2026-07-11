@@ -148,10 +148,14 @@ ul {
 
 @media (max-width:768px){
 
-	#container {
-    width: 100%;
-    max-width: 700px;
-}
+#container{
+      width: auto;
+      max-width: 700px;
+      margin-left: 16px;
+      margin-right: 16px;
+      position: static;
+  }
+
 	
   h1{
     font-size:2rem;
@@ -168,12 +172,10 @@ ul {
     line-height:1.6;
   }
 
-  #chart{
-      width:100%;
-      margin-left:0;
-      overflow-x:auto;
-      -webkit-overflow-scrolling:touch;
-  }
+#chart{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
 
   #chart svg{
       min-width:1000px;
