@@ -39,9 +39,13 @@ var colors = [
 
     $(document).ready(function(){
 
-        $('#line1').delay(2000).show(0);
-        $('#line2').delay(4000).show(0);
-        $('#line3').delay(6000).show(0);
+       var isMobile = window.innerWidth <= 768;
+
+if (!isMobile) {
+    $('#line1').delay(2000).show(0);
+    $('#line2').delay(4000).show(0);
+    $('#line3').delay(6000).show(0);
+}
         $('#line4').hide();
         $('#frequencybuttons').hide();
         $('#shuffleagain').hide();
