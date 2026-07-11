@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("newsreporter.png");
+	background-image: url("newsreporter.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -140,7 +140,8 @@ body {
   }
 	
 body {
-      background-size: contain;
+      padding-top: 160px;
+	  background-size: contain;
       background-position: top center;
       background-repeat: no-repeat;
   }
@@ -170,7 +171,7 @@ body {
     top: auto;
 }
 
-	#pagetitle {
+#pagetitle {
     font-size: 2rem;
     text-align: center;
 }
@@ -187,6 +188,7 @@ body {
 #footnote1 {
     font-size: 0.9rem;
 }
+	
 #button1,
 #button2 {
     display: block;
@@ -200,7 +202,7 @@ body {
 }
 	
 #replacetext {
-      font-size: 1.1em;
+      font-size: 1.3em;
       font-weight: bold;
       color: #800000;
   }
@@ -226,9 +228,20 @@ body {
     line-height: 1.4;
 }
 
+#shuffleagain {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
 #conclusion {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+#footnote1 {
+    position: static;
+    margin-top: 40px;
+    font-size: 0.85rem;
 }
 
 	
