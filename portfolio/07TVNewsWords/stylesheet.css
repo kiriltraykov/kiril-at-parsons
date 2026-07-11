@@ -139,13 +139,25 @@ body {
       font-family: 'Crimson Text', serif;
   }
 	
-	body {
-    background-size: cover;
-    background-position: center top;
-    min-height: 100vh;
+body {
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+  }
+
+.forbuttons {
+    font-size: 1rem;
 }
 
-	#pagetitle,
+#manywords,
+#selectedword {
+    position: static;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#pagetitle,
 #line1,
 #line2,
 #line3,
@@ -165,15 +177,9 @@ body {
 
 #line1,
 #line2,
-#line3,
-#line4 {
+#line3 {
     font-size: 1rem;
     line-height: 1.5;
-}
-
-#manywords,
-#selectedword {
-    font-size: 1.25rem;
 }
 
 #legend,
@@ -181,13 +187,28 @@ body {
 #footnote1 {
     font-size: 0.9rem;
 }
-
 #button1,
 #button2 {
-    width: 200px;
     display: block;
-    margin: 12px auto;
-    font-size: 1rem;
+    width: 220px;
+    margin: 10px auto;
+	font-size: 1rem;
+}
+
+.forbuttons {
+    text-align: center;
+}
+	
+#replacetext {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #800000;
+  }
+
+#line4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 #button3,
@@ -195,9 +216,19 @@ body {
 #button5,
 #button6 {
     width: 48%;
-    margin-bottom: 8px;
     font-size: 1rem;
+    margin-bottom: 8px;
     padding: 10px;
+}
+
+#outcomemessage {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+#conclusion {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 	
