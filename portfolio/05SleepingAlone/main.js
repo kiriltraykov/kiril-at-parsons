@@ -440,6 +440,32 @@ if(firstcall){
                  return d.source.name + " → " + d.target.name + "\n" + format(d.value);
              });
 
+      if (isMobile) {
+
+    link.on("click", function(d) {
+
+        d3.selectAll(".tooltip").classed("show", false);
+
+        sankeyTooltip2.classed("show", true);
+
+        sankeyTooltip2.text(
+            d.source.name + " → " +
+            d.target.name + ": " +
+            format(d.value)
+        );
+
+        sankeyTooltip2.style({
+            top: (d3.event.pageY + 12) + "px",
+            left: "18px",
+            right: "18px"
+        });
+
+        link.style("stroke-opacity", 0.15);
+        d3.select(this).style("stroke-opacity", 0.7);
+    });
+
+}
+
          var node = svg.append("g").selectAll(".node")
              .data(sleeping2.nodes)
              .enter().append("g")
@@ -463,6 +489,30 @@ if(firstcall){
              .text(function(d) {
                  return d.name + "\n" + format(d.value);
              });
+
+      if (isMobile) {
+
+    node.on("click", function(d) {
+
+        d3.selectAll(".tooltip").classed("show", false);
+
+        link.style("stroke-opacity", 0.2);
+
+        sankeyTooltip2.classed("show", true);
+
+        sankeyTooltip2.text(
+            d.name + ": " + format(d.value)
+        );
+
+        sankeyTooltip2.style({
+            top: (d3.event.pageY + 12) + "px",
+            left: "18px",
+            right: "18px"
+        });
+
+    });
+
+}
 
          node.append("text")
              .attr("x", -6)
