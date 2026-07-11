@@ -74,3 +74,61 @@ h2 {
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+@media (max-width:768px){
+	
+#body {
+    margin-left: 0;
+	font-size: 1.1rem;
+    line-height: 1.7;
+}
+	
+.to-the-left{
+    width:100%;
+    float:none;
+}
+
+.credits {
+    margin-left: 0;
+	font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.message {
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+#footnote1,
+#footnote2,
+#opensource {
+    position: static;
+}
+
+#footnote1,
+#footnote2 {
+    font-size: 0.9rem;
+}
+
+#opensource {
+    width: auto;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+}
