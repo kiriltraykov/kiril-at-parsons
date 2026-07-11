@@ -144,6 +144,7 @@ body {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: top center;
+      padding-top: 160px
   }
 
   #line1,
@@ -176,10 +177,12 @@ body {
     top: auto;
 }
 
-#pagetitle {
-    font-size: 2rem;
-    text-align: center;
-}
+  #pagetitle {
+      margin-top: 280px;
+      text-align: center*
+      font-size: 2rem;
+  }
+
 
 #legend,
 #answers,
