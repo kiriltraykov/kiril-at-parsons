@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	    <link href="https://fonts.googleapis.com/css?family=Podkova" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Unkempt" rel="stylesheet">
+		<title>eHarmonyforBeer</title>
+	</head>
+	<body>
+
+		<script src='jquery-3.2.1.min.js'></script>
+		<script src='main.js'></script>
+		<script src='beers.js'></script>
+
+		<h6>/<a href="https://kiriltraykov.github.io/Portfolio/">Welcome Page</a>
+		&nbsp; &nbsp; 
+		/<a href="https://kiriltraykov.github.io/Projects/">Projects Page</a></h6>
+
+
+		<h1>Welcome to Beer Match!</h1>
+		
+		<p id = "line1" style="display:none">There are more than <b>48,000</b> registered beers in the USA so finding </br> 
+			                                 the right one may feel like looking for a needle in a haystack.</p>
+		<p id = "line2" style="display:none"><b>But worry not!</b></p>
+		<p id = "line3" style="display:none">Our <b>proprietary algorithm</b> will help you find your Beer Match!</p>
+		<p id = "line4" style="display:none">You simply have to answer 3 questions:</p>
+		
+        </br>
+		<button id = "beginButton" style="display:none">Begin Quiz</button>
+
+        </br>
+		<p id = "question"> </p>
+		<form id="typeAnswer1">
+			<input type="text" name="Words1"/>
+		</form>
+		<div id="submit1">Submit</div>
+		<form id="typeAnswer2">
+			<input type="text" name="Words2"/>
+		</form>
+		<div id="submit2">Submit</div>
+		<form id="typeAnswer3">
+			<input type="text" name="Words3"/>
+		</form>
+		<div id="submit3">Submit</div>
+
+
+	   <div id ="box">
+	   <p id ="warning"></p>
+	   <div id="takeMeToResults">Now, take me to results!</div>
+	   </div>
+
+	   <div id ="beerResults">
+	   <p id = "beerMatchIs"></p>
+	   <p id ="beerName"></p>
+	   <p id ="beerDescription"></p>
+	   <p id ="beerABV"></p>
+	   <p id ="beerOrigin"></p>
+	   <p id ="beerFamily"></p>
+	   <p id = "cheers"></p>
+	   </div>
+
+
+	   <p id = "footnote1">Beer source: BreweryDB, public API available at http://www.brewerydb.com/developers</p>
+    
+
+	</body>
+</html>
