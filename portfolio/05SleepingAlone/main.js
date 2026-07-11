@@ -417,6 +417,12 @@ if(firstcall){
          .size([width, height]);
 
      var path = sankey.link();
+  var isMobile = window.innerWidth <= 768;
+
+var sankeyTooltip2 = d3.select('body')
+    .append('div')
+    .attr('class', 'tooltip');
+  
      d3.json("sleepingalone2.json", function(sleeping2) {
          sankey
              .nodes(sleeping2.nodes)
