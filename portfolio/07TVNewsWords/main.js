@@ -49,8 +49,6 @@ if (!isMobile) {
         $('#line4').hide();
         $('#frequencybuttons').hide();
         $('#shuffleagain').hide();
-        $('#answers').hide();
-
 
 		$('#button1').on('click', function(){
 		
@@ -61,7 +59,6 @@ if (!isMobile) {
 		$('#outcomemessage').text(" ");
 		$('#conclusion').text(" ");
         $('#shuffleagain').hide();
-        $('#answers').hide();
    
       		});
 
@@ -91,7 +88,6 @@ $('#replacetext').css(
         $('#button5').text(freq3);
         $('#button6').text(freq4);
         $('#shuffleagain').hide();
-        $('#answers').hide();
 
         $('#button3').on('click', function(){
 		
@@ -103,7 +99,6 @@ $('#replacetext').css(
 
         $('#conclusion').text("I say " + showWord + " " + showFrequency + " times in a million words! So that makes it " + showFrequencyBin + ".");
         $('#shuffleagain').show();
-        $('#answers').show();
 
       		});
 
@@ -117,8 +112,6 @@ $('#replacetext').css(
 
         $('#conclusion').text("I say " + showWord + " " + showFrequency + " times in a million words! So that makes it " + showFrequencyBin + ".");
         $('#shuffleagain').show();
-        $('#answers').show();
-
       		});
 
         $('#button5').on('click', function(){
@@ -131,8 +124,6 @@ $('#replacetext').css(
 
         $('#conclusion').text("I say " + showWord + " " + showFrequency + " times in a million words! So that makes it " + showFrequencyBin + ".");
         $('#shuffleagain').show();
-        $('#answers').show();
-
       		});
 
         $('#button6').on('click', function(){
@@ -145,7 +136,6 @@ $('#replacetext').css(
 
         $('#conclusion').text("I say " + showWord + " " + showFrequency + " times in a million words! So that makes it " + showFrequencyBin + ".");
         $('#shuffleagain').show();
-        $('#answers').show();
 
       		});
 
