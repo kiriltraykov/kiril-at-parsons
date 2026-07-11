@@ -149,12 +149,14 @@ body {
 .forbuttons {
     font-size: 1rem;
 }
-
+	
 #manywords,
 #selectedword {
-    position: static;
-    margin: 12px 0;
+    position: relative;
+    display: block;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.3rem;
 }
 
