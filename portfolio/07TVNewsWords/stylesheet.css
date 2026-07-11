@@ -226,16 +226,19 @@ body {
 #outcomemessage {
     font-size: 1.5rem;
     line-height: 1.4;
+	text-align: center;
 }
 
 #shuffleagain {
     font-size: 1.1rem;
     line-height: 1.5;
+	text-align: center;
 }
 
 #conclusion {
     font-size: 1rem;
     line-height: 1.6;
+	text-align: center;
 }
 
 #footnote1 {
