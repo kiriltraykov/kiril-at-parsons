@@ -74,7 +74,12 @@ var colors = [
         $('#selectedword').css('left', Math.floor((Math.random() * width) + 1) + 'px');
         $('#line4').show();
         $('#replacetext').text(showWord);
-        $('#replacetext').css('font-size','2vw');
+       var isMobile = window.innerWidth <= 768;
+
+$('#replacetext').css(
+    'font-size',
+    isMobile ? '1.4rem' : '2vw'
+);
         $('#replacetext').css('text-decoration','underline');
         $('#frequencybuttons').show();
         $('#button3').text(freq1);
