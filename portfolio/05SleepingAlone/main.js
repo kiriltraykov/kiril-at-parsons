@@ -68,23 +68,37 @@
 
      var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
 
-     items.on('mouseenter', showToolTip)
-         .on('mouseleave', hideToolTip)
+    var isMobile = window.innerWidth <= 768;
 
-     function showToolTip(d, i) {
-         tooltip.classed('show', true)
-         tooltip.text(d.explanation)
+if (isMobile) {
+    items.on('click', function(d, i) {
+        showToolTip.call(this, d, i);
+    });
+} else {
+    items.on('mouseenter', showToolTip)
+         .on('mouseleave', hideToolTip);
+}
 
-         var brc = this.getBoundingClientRect()
-         var ttbrc = tooltip.node().getBoundingClientRect()
+function showToolTip(d, i) {
+    tooltip.classed('show', true);
+    tooltip.text(d.explanation);
 
+    var brc = this.getBoundingClientRect();
+    var ttbrc = tooltip.node().getBoundingClientRect();
+    var isMobile = window.innerWidth <= 768;
 
-         tooltip
-             .style({
-                 top: (brc.top + pageYOffset - ttbrc.height) + 'px',
-                 left: brc.left + 'px'
-             })
-     }
+    tooltip.style({
+        top: isMobile
+            ? (brc.top + pageYOffset + brc.height + 8) + 'px'
+            : (brc.top + pageYOffset - ttbrc.height) + 'px',
+        left: isMobile
+            ? '18px'
+            : brc.left + 'px',
+        right: isMobile
+            ? '18px'
+            : 'auto'
+    });
+}
 
      function hideToolTip(d, i) {
          tooltip.classed('show', false)
