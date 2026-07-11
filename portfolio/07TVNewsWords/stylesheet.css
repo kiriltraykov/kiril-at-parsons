@@ -17,10 +17,6 @@ body {
 	font-size: 1vw;
 }
 
-#answers {
-	font-size: 1vw;
-}
-
 #manywords, #selectedword {
   position: absolute;
   font-size: 1.75vw;
@@ -57,7 +53,7 @@ body {
 
 #footnote1 {
 	font-family: 'Crimson Text', serif;
-	font-size: 1vw;
+	font-size: 1.1vw;
 	position:fixed;
     bottom: 0;
 }
