@@ -25,6 +25,10 @@ ul {
 	padding: 0;
 }
 
+#date {
+	text-align: center;
+}
+
 .dividedbar{
 	overflow: hidden;
 		font-family: "Helvetica";
