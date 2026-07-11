@@ -113,24 +113,13 @@ opacity: .8;}
 
 @media (max-width:768px){
 
-.mobile-note {
-    display:block;
-    max-width:700px;
-    margin:12px auto 24px auto;
-    padding:12px 16px;
-    font-size:0.95rem;
-    line-height:1.45;
-    background:#f5f5f5;
-    border-left:4px solid #222;
-}
-
 body {
     background-image: url("beerglass.png");
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
 
-    padding-top: 280px;
+    padding-top: 300px;
 }
 
 	h1 {
