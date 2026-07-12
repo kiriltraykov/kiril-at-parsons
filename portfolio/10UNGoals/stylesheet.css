@@ -95,7 +95,8 @@ color: #494529;
     bottom: 0;
 }
 
-{
+@media (max-width:768px) {
+	
 #box1,
 #box2 {
     width: 100%;
