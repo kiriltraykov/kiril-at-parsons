@@ -100,8 +100,7 @@ color: #494529;
 #box1 {
     width: 100%;
     float: none;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
