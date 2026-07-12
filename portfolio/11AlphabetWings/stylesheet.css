@@ -1,0 +1,53 @@
+body {
+	font-family: 'Lora', serif;
+}
+
+#box1 {
+	margin-left: 20%;
+}
+
+#button1 {
+	font-size: 2vw;
+	background-color: #699DB6;
+	border-color: rgba(105, 157, 182, 0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+	width: 30%;
+	}
+
+#button1:hover {
+	background-color: #4F87A2;
+	border-color: rgba(0,0,0,0.5);
+	}
+	
+#button1:active {
+	background-color: #3C677B;
+	border-color: rgba(0,0,0,0.9);
+	}
+
+img {
+	display: inline-block;
+	}
+
+img.resize {
+  max-width: 75%;
+}
+
+img.shoe {
+  max-width: 20%;
+  float: right;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.2vw;
+    float: right;
+	margin-right: 5%;
+}
+
+#button2 {
+  background-color: black;
+  color: orange;
+  font-size: 1.2vw;
+}
+
