@@ -51,7 +51,8 @@ h4 {
   font-size: 1.2vw;
 }
 
-{
+@media (max-width:768px) {
+	
 #box1 {
     margin-left: 0;
     text-align: center;
