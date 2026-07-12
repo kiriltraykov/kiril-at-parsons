@@ -51,3 +51,47 @@ h4 {
   font-size: 1.2vw;
 }
 
+{
+#box1 {
+    margin-left: 0;
+    text-align: center;
+}
+
+img.resize {
+    max-width: 100%;
+    height: auto;
+}
+
+img.shoe {
+    max-width: 70%;
+    float: none;
+    display: block;
+    margin: 20px auto;
+}
+
+h4 {
+    float: none;
+    text-align: center;
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+#button1 {
+    width: 220px;
+    font-size: 1rem;
+}
+
+#button2 {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+}
