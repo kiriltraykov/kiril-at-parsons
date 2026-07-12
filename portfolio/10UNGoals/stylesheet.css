@@ -103,10 +103,24 @@ color: #494529;
     float: none;
 }
 
+h3,
+h4 {
+    font-size: 1.2rem;
+}
+
+p.initial {
+    font-size: 1.1rem;
+}
+
+#button1 {
+    width: 220px;
+    font-size: 1.1rem;
+}
+
 #footnote1 {
     position: static;
     margin-top: 40px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 }
