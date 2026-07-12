@@ -95,3 +95,17 @@ color: #494529;
     bottom: 0;
 }
 
+{
+#box1,
+#box2 {
+    width: 100%;
+    float: none;
+}
+
+#footnote1 {
+    position: static;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+}
