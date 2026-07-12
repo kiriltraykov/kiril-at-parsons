@@ -1,3 +1,8 @@
+    var isMobile = window.innerWidth <= 768;
+    var goalFont = isMobile ? "1.1rem" : "1.5vw";
+    var rootFont = isMobile ? "2rem" : "5vw";
+    var treeFont = isMobile ? "1.5rem" : "3vw";
+
     var goalUN = "UN"
     var goal0 = "Goals"
     var goal1 = "No Hunger"
@@ -41,26 +46,26 @@
 			$('h4').remove();
 		    $('#button1').remove();
    			$('li').show();
-		    $('#placeholderUN').delay(2000).queue(function (next) { $(this).append(goalUN); next();}).css({"color":"#FF8000","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder0').delay(3000).queue(function (next) { $(this).append(goal0); next();}).css({"color":"#FF8000","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-			$('#placeholder1').delay(4000).queue(function (next) { $(this).append(goal1); next();}).css({"color":"#CC0066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-			$('#placeholder2').delay(5000).queue(function (next) { $(this).append(goal2); next();}).css({"color":"#CC0066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-			$('#placeholder3').delay(6000).queue(function (next) { $(this).append(goal3); next();}).css({"color":"#CC0066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder4').delay(7000).queue(function (next) { $(this).append(goal4); next();}).css({"color":"#CC0066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder5').delay(8000).queue(function (next) { $(this).append(goal5); next();}).css({"color":"#660000","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder6').delay(9000).queue(function (next) { $(this).append(goal6); next();}).css({"color":"#660000","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder7').delay(10000).queue(function (next) { $(this).append(goal7); next();}).css({"color":"#660000","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder8').delay(11000).queue(function (next) { $(this).append(goal8); next();}).css({"color":"#660000","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder9').delay(12000).queue(function (next) { $(this).append(goal9); next();}).css({"color":"#000066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder10').delay(13000).queue(function (next) { $(this).append(goal10); next();}).css({"color":"#000066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder11').delay(14000).queue(function (next) { $(this).append(goal11); next();}).css({"color":"#000066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder12').delay(15000).queue(function (next) { $(this).append(goal12); next();}).css({"color":"#000066","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder13').delay(16000).queue(function (next) { $(this).append(goal13); next();}).css({"color":"#006600","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder14').delay(17000).queue(function (next) { $(this).append(goal14); next();}).css({"color":"#006600","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder15').delay(18000).queue(function (next) { $(this).append(goal15); next();}).css({"color":"#006600","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder16').delay(19000).queue(function (next) { $(this).append(goal16); next();}).css({"color":"#006600","font-size": "1.5vw","font-family": "'Architects Daughter', cursive"});
-		    $('#placeholder17').delay(20000).queue(function (next) { $(this).append(goal17); next();}).css({"color":"#494529","font-size": "5vw","font-family": "'Hanalei Fill', cursive"});
-      		$('#placeholderTree').delay(22000).queue(function (next) { $(this).append(goalTree); next();}).css({"color":"#00B040","font-size": "3vw","font-family": "'Architects Daughter',cursive"});
+		    $('#placeholderUN').delay(2000).queue(function (next) { $(this).append(goalUN); next();}).css({"color":"#FF8000","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder0').delay(3000).queue(function (next) { $(this).append(goal0); next();}).css({"color":"#FF8000","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+			$('#placeholder1').delay(4000).queue(function (next) { $(this).append(goal1); next();}).css({"color":"#CC0066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+			$('#placeholder2').delay(5000).queue(function (next) { $(this).append(goal2); next();}).css({"color":"#CC0066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+			$('#placeholder3').delay(6000).queue(function (next) { $(this).append(goal3); next();}).css({"color":"#CC0066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder4').delay(7000).queue(function (next) { $(this).append(goal4); next();}).css({"color":"#CC0066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder5').delay(8000).queue(function (next) { $(this).append(goal5); next();}).css({"color":"#660000","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder6').delay(9000).queue(function (next) { $(this).append(goal6); next();}).css({"color":"#660000","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder7').delay(10000).queue(function (next) { $(this).append(goal7); next();}).css({"color":"#660000","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder8').delay(11000).queue(function (next) { $(this).append(goal8); next();}).css({"color":"#660000","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder9').delay(12000).queue(function (next) { $(this).append(goal9); next();}).css({"color":"#000066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder10').delay(13000).queue(function (next) { $(this).append(goal10); next();}).css({"color":"#000066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder11').delay(14000).queue(function (next) { $(this).append(goal11); next();}).css({"color":"#000066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder12').delay(15000).queue(function (next) { $(this).append(goal12); next();}).css({"color":"#000066","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder13').delay(16000).queue(function (next) { $(this).append(goal13); next();}).css({"color":"#006600","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder14').delay(17000).queue(function (next) { $(this).append(goal14); next();}).css({"color":"#006600","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder15').delay(18000).queue(function (next) { $(this).append(goal15); next();}).css({"color":"#006600","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder16').delay(19000).queue(function (next) { $(this).append(goal16); next();}).css({"color":"#006600","font-size": goalFont,"font-family": "'Architects Daughter', cursive"});
+		    $('#placeholder17').delay(20000).queue(function (next) { $(this).append(goal17); next();}).css({"color":"#494529","font-size": rootFont,"font-family": "'Hanalei Fill', cursive"});
+      		$('#placeholderTree').delay(22000).queue(function (next) { $(this).append(goalTree); next();}).css({"color":"#00B040","font-size": treeFont,"font-family": "'Architects Daughter',cursive"});
 
 		});
 
