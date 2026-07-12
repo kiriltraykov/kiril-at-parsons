@@ -1,0 +1,97 @@
+
+#box1 {
+	margin-left: 5%;
+	float:left;
+	width: 35%;
+}
+
+#box2 {
+	float:right;
+	width: 60%;
+}
+
+h3, h4 {
+    font-size: 1.5vw;
+}
+
+p.initial {
+	margin: 0%;
+	font-size: 1vw;
+}
+
+#button1 {
+	font-size: 1.2vw;
+	text-align: center;
+	background-color: #699DB6;
+	border-color: rgba(105, 157, 182, 0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+	width: 30%;
+	}
+
+#button1:hover {
+	background-color: #4F87A2;
+	border-color: rgba(0,0,0,0.5);
+	}
+	
+#button1:active {
+	background-color: #3C677B;
+	border-color: rgba(0,0,0,0.9);
+	}
+
+#placeholderUN,
+#placeholder0,
+#placeholder1,
+#placeholder2,	
+#placeholder3,	
+#placeholder4,	
+#placeholder5,	
+#placeholder6,	
+#placeholder7,	
+#placeholder8,	
+#placeholder9,	
+#placeholder10,	
+#placeholder11,	
+#placeholder12,	
+#placeholder13,	
+#placeholder14,	
+#placeholder15,	
+#placeholder16,
+#placeholder17,
+#placeholderTree {
+	font-weight: bold;
+	text-align: center;
+	margin: 0%;
+}
+
+#bullet1 {
+font-weight: bold;
+color: #CC0066;
+}
+
+#bullet2 {
+font-weight: bold;
+color: #660000;
+}
+
+#bullet3 {
+font-weight: bold;
+color: #000066;
+}
+
+#bullet4 {
+font-weight: bold;
+color: #006600;
+}
+
+#bullet5 {
+font-weight: bold;
+color: #494529;
+}
+
+#footnote1 {
+	font-size: 0.8vw;
+	position:fixed;
+    bottom: 0;
+}
+
